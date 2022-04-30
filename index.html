@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="style.css">
 
+  <script src="./js/animations.js"></script>
+
 </head>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,7 +40,7 @@
               aria-expanded="false">
               Learn
             </a>
-            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Office</a></li>
               <li><a class="dropdown-item" href="#">Adobe</a></li>
               <li><a class="dropdown-item" href="#">AutoDesk</a></li>
@@ -96,18 +98,19 @@
       </div>
     </div>
 
-    <div class="row maininputdiv">
+    <div class="row maininputdiv unselectable">
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <br>
-        <div class="text-center text-white">
-          <input type="text" class="maininput" placeholder="Search" >
-          <div id="Stext">Search</div>
-          <img src="./img/arrow_back.png" alt="" width="3%" id="arrowb">
-          <img src="./img/arrow_front.png" alt="" width="2%" id="arrowf">
-        </div>
+          <input type="text" class="maininput" placeholder="Search" onfocus="maininputfocos();" onblur="maininputfocoslost();" >
       </div>
-      <div class="col-md-2"></div>
+      <div class="col-md-2">
+        <a href="#">
+          <span class="text-white Stext">Search</span>
+          <img src="./img/arrow_back.png" alt="" width="20%" class="arrowb">
+          <img src="./img/arrow_front.png" alt="" width="10%" class="arrowf">
+        </a>
+      </div>
     </div>
 
     
