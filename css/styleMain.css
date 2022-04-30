@@ -11,14 +11,11 @@
 }
 
 * {
+    --smooth-blue: #008ecc;
     --blue: #3e78b2;
-    --smooth-green: #F5C396;
+    --grey: #dedede;
     --black: #2a2b2a;
     --green: #44dc5b;
-}
-
-body {
-    background-color: var(--smooth-green);
 }
 
 .maininput {
@@ -33,6 +30,7 @@ body {
     color: #000000;
     padding-left: 10px;
     padding-right: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.188);
 }
 
 .maininputdiv {
@@ -78,4 +76,19 @@ body {
 
 .maininputdiv a {
     text-decoration: none;
+}
+
+.carousel-caption{
+    padding-bottom: 10rem !important;
+    padding-right: 25rem !important;
+    text-align: left !important;
+
+}
+
+.carousel-caption a {
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
 }
