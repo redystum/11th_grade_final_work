@@ -1,3 +1,55 @@
-body{
+* {
+    --blue: #3e78b2;
+    --smooth-green: #bec5ad --black: #2a2b2a;
+    --green: #44dc5b;
+}
+
+body {
     background-color: #bec5ad;
+}
+
+.maininput {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.maininputdiv {
+    margin-top: 50px;
+}
+#Stext {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: 1s ease;
+}
+#arrowf {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: 1s ease;
+}
+#arrowb {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: 1s ease;
+}
+
+.maininput:focus ~ #Stext {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.maininput:focus ~ #arrowb {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.maininput:focus ~ #arrowf {
+    opacity: 1;
+    transform: translateY(0px);
 }
