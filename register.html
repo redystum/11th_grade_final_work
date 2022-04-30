@@ -62,7 +62,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">
-        <div class="loginformdiv">
+        <div class="loginformdiv" id="loginformdiv">
           <h2>Hi !</h2>
           <h4>Lets create your account</h4>
           <form action="" class="loginform">
@@ -85,19 +85,33 @@
   </div>
 
 
+  <style>
+    .loginformdiv {
+      position: absolute;
+      top: 10% !important;
+      padding: 20px;
+      left: 5% !important;
+    }
+  </style>
   <script>
-    let elm = document.getElementById('loginimg');
-    elm.style.height = window.innerHeight + 'px';
-    elm.style.width = window.innerWidth + 'px';
+    const isOnTop = (id) => {
+      let element = document.querySelector(id),
+        divs = document.querySelectorAll('#loginformdiv');
+
+      return [...divs].some(div =>
+        div.getBoundingClientRect().bottom > element.getBoundingClientRect().bottom
+      );
+    }
+
+    window.addEventListener('resize', function(event) {
+      let element = document.getElementById('loginimg');
+    if (isOnTop('#loginimg')) {
+      element.style.opacity = '0.5';
+    } else {
+      element.style.opacity = '1';
+    }
+}, true);
   </script>
-    <style>
-      .loginformdiv {
-        position: absolute;
-        top: 10% !important;
-        padding: 20px;
-        left: 5% !important;
-      }
-    </style>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
