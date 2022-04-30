@@ -27,29 +27,29 @@ body {
 }
 #Stext {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(30px) !important;
     transition: 1s ease;
 }
 #arrowf {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateX(30px) !important;
     transition: 1s ease;
 }
 #arrowb {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateX(-30px) !important;
     transition: 1s ease;
 }
 
 .maininput:focus ~ #Stext {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0px) !important;
 }
 .maininput:focus ~ #arrowb {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0px) !important;
 }
 .maininput:focus ~ #arrowf {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0px) !important;
 }
