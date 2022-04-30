@@ -7,6 +7,7 @@ A Company that sells:
  - Online Courses
  - Software
  - PC Builds
+
 The entire theme is integrated into the productivity area, graphic design and 3D software
 
 #Languages
