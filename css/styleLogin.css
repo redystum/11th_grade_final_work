@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "whitney";
+    src: url("../fonts/Whitney-Book-Bas.otf");
+}
+
+* {
+    --smooth-blue: #008ecc;
+    --blue: #3e78b2;
+    --smooth-green: #d2d2d2;
+    --black: #2a2b2a;
+    --green: #44dc5b;
+}
+
+
+body {
+    background-color: white;
+}
+
+.loginformdiv{
+/* align on a screen center */
+    position: absolute;
+    top: 20%;
+    padding: 20px;
+    left: 10%;
+}
+
+.login_input{
+    width: 150%;
+    height: 50px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    font-family: 'whitney', roboto, sans-serif;
+    color: var(--black);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background-color: transparent;
+    border-bottom: 2px solid var(--smooth-blue);
+}
+
+.login_input:focus{
+    border-bottom: 2px solid var(--blue);
+    transition: 1s ease;
+}
+
+.submit_button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    font-family: 'whitney', roboto, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+    border: var(--smooth-blue) solid 2px;
+}
+
+.submit_button:hover{
+    transition: 1s ease;
+    background-color: var(--blue);
+    border: var(--blue) solid 2px;
+
+}
+
+.registertext{
+    font-size: 15px;
+    font-family: 'whitney', roboto, sans-serif;
+    color: var(--smooth-blue);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.registertext a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.img_div{
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: right;
+}

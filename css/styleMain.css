@@ -1,11 +1,24 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "courgette";
+    src: url("../fonts/Courgette-Regular.ttf");
+}
+
+@font-face {
+    font-family: "whitney";
+    src: url("../fonts/Whitney-Book-Bas.otf");
+}
+
 * {
     --blue: #3e78b2;
-    --smooth-green: #bec5ad --black: #2a2b2a;
+    --smooth-green: #F5C396;
+    --black: #2a2b2a;
     --green: #44dc5b;
 }
 
 body {
-    background-color: #bec5ad;
+    background-color: var(--smooth-green);
 }
 
 .maininput {
