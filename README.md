@@ -10,7 +10,7 @@ A Company that sells:
 
 The entire theme is integrated into the productivity area, graphic design and 3D software
 
-#Languages
+# Languages
 - HTML
 - CSS
 - JavaScript
