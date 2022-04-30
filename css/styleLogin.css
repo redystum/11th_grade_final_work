@@ -19,7 +19,6 @@ body {
 }
 
 .loginformdiv{
-/* align on a screen center */
     position: absolute;
     top: 20%;
     padding: 20px;
@@ -59,6 +58,7 @@ body {
     padding-right: 10px;
     margin-top: 50px;
     border: var(--smooth-blue) solid 2px;
+    background-color: transparent;
 }
 
 .submit_button:hover{
