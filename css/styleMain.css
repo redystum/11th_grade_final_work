@@ -10,6 +10,10 @@
     src: url("../fonts/Whitney-Book-Bas.otf");
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 * {
     --smooth-blue: #008ecc;
     --blue: #3e78b2;
@@ -91,4 +95,9 @@
     text-decoration: none;
     color: black;
     border-radius: 5px;
+}
+
+.maincontainer{
+    padding: 0px !important;
+    margin: 0px !important;
 }
