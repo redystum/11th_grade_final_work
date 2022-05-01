@@ -17,12 +17,12 @@
 
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <span class="navbar-brand">
         <img src="./img/logo_progeto_final_logo.png" alt="" width="30" class="d-inline-block align-text-top">
         Artistic Design
-      </a>
+      </span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Products</a>
@@ -103,14 +103,14 @@
       );
     }
 
-    window.addEventListener('resize', function(event) {
+    window.addEventListener('resize', function (event) {
       let element = document.getElementById('loginimg');
-    if (isOnTop('#loginimg')) {
-      element.style.opacity = '0.5';
-    } else {
-      element.style.opacity = '1';
-    }
-}, true);
+      if (isOnTop('#loginimg')) {
+        element.style.opacity = '0.5';
+      } else {
+        element.style.opacity = '1';
+      }
+    }, true);
   </script>
 
   <!-- Optional JavaScript -->
