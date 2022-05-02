@@ -62,7 +62,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">
-        <div class="loginformdiv">
+        <div class="loginformdiv" id="loginformdiv">
           <h2>Hi !</h2>
           <h4>Login your account</h4>
           <form action="" class="loginform">
@@ -81,6 +81,35 @@
     </div>
   </div>
 
+  <script>
+    const isOnTop = (id) => {
+      let element = document.querySelector(id),
+        divs = document.querySelectorAll('#loginimg');
+
+      return [...divs].some(div =>
+        div.getBoundingClientRect().bottom > element.getBoundingClientRect().bottom
+      );
+    }
+
+    window.addEventListener('resize', function (event) {
+      let element = document.getElementById('loginimg');
+      if (isOnTop('#loginformdiv')) {
+        element.style.opacity = '0.5';
+        console.log('on top');
+      } else {
+        element.style.opacity = '1';
+        console.log('not on top');
+      }
+    }, true);
+    let element = document.getElementById('loginimg');
+      if (isOnTop('#loginformdiv')) {
+        element.style.opacity = '0.5';
+        console.log('on top');
+      } else {
+        element.style.opacity = '1';
+        console.log('not on top');
+      }
+  </script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
