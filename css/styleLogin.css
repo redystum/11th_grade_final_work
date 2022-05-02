@@ -6,11 +6,11 @@
 }
 
 * {
-    --smooth-blue: #008ecc;
+    --smooth-blue: #92bae0;
     --blue: #3e78b2;
-    --smooth-green: #d2d2d2;
     --black: #2a2b2a;
     --green: #44dc5b;
+    --orange: #f5c396;
 }
 
 ::-webkit-scrollbar {

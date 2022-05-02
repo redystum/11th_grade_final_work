@@ -16,3 +16,8 @@ The entire theme is integrated into the productivity area, graphic design and 3D
 - JavaScript
 - PHP
 - MySQL
+
+
+# appointments
+### Color Palette:
+https://coolors.co/f5c396-2a2b2a-3e78b2-92bae0-44dc5b

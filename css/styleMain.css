@@ -15,11 +15,11 @@
 }
 
 * {
-    --smooth-blue: #008ecc;
+    --smooth-blue: #92bae0;
     --blue: #3e78b2;
-    --grey: #dedede;
     --black: #2a2b2a;
     --green: #44dc5b;
+    --orange: #f5c396;
 }
 
 .maininput {
@@ -40,16 +40,19 @@
 .maininputdiv {
     margin-top: 20px;
 }
+
 .Stext {
     opacity: 0;
     transform: translateY(0px) !important;
     transition: 1s ease;
 }
+
 .arrowf {
     opacity: 0;
     transform: translateX(30px) !important;
     transition: 1s ease;
 }
+
 .arrowb {
     opacity: 0;
     transform: translateX(-30px) !important;
@@ -60,10 +63,12 @@
     opacity: 1;
     transform: translateY(0px) !important;
 }
+
 .arrowbAtive {
     opacity: 1;
     transform: translateX(0px) !important;
 }
+
 .arrowfAtive {
     opacity: 1;
     transform: translateX(0px) !important;
@@ -82,7 +87,7 @@
     text-decoration: none;
 }
 
-.carousel-caption{
+.carousel-caption {
     padding-bottom: 10rem !important;
     padding-right: 25rem !important;
     text-align: left !important;
@@ -97,19 +102,50 @@
     border-radius: 5px;
 }
 
-.cousesInfo{
+.cousesInfo {
     padding: 20px !important;
 }
 
-.cousesInfo .col-md-4 p{
+.coursesdiv {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.188);
+    border-radius: 10px;
+    height: 550px;
+    padding-top: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.coursesdiv .bottomdiv {
+    position: absolute;
+    bottom: 0px;
+    padding: 50px;
+    padding-bottom: 30px !important;
+}
+
+.bottomdiv a {
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.cousesInfo .col-md-4 p {
     padding: 10px !important;
     font-size: 20px !important;
 }
 
-.cousesInfo ul{
+.cousesInfo ul {
     text-align: center;
 }
 
-.cousesInfo ul{
+.cousesInfo ul {
     display: inline-block;
+}
+
+.coursesdivcert {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.188);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
 }
