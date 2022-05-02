@@ -96,16 +96,24 @@
   <script>
     const isOnTop = (id) => {
       let element = document.querySelector(id),
-        divs = document.querySelectorAll('#loginimg');
+        divs = document.querySelectorAll('#loginformdiv');
 
       return [...divs].some(div =>
-        div.getBoundingClientRect().bottom > element.getBoundingClientRect().bottom
+        div.getBoundingClientRect().right > element.getBoundingClientRect().left
       );
     }
 
+    let element = document.getElementById('loginimg');
+      if (isOnTop('#loginimg')) {
+        element.style.opacity = '0.5';
+        console.log('on top');
+      } else {
+        element.style.opacity = '1';
+        console.log('not on top');
+      }
+
     window.addEventListener('resize', function (event) {
-      let element = document.getElementById('loginimg');
-      if (isOnTop('#loginformdiv')) {
+      if (isOnTop('#loginimg')) {
         element.style.opacity = '0.5';
         console.log('on top');
       } else {
@@ -113,6 +121,7 @@
         console.log('not on top');
       }
     }, true);
+  
   </script>
 
   <!-- Optional JavaScript -->
