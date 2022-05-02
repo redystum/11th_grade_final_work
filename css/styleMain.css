@@ -90,16 +90,11 @@
 }
 
 .carousel-caption a {
-    background-color: white;
+    background-color: black;
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
     border-radius: 5px;
-}
-
-.maincontainer{
-    padding: 0px !important;
-    margin: 0px !important;
 }
 
 .cousesInfo{
