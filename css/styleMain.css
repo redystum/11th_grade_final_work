@@ -118,16 +118,27 @@
 .coursesdiv .bottomdiv {
     position: absolute;
     bottom: 0px;
-    padding: 50px;
     padding-bottom: 30px !important;
 }
 
 .bottomdiv a {
-    background-color: black;
+    background-color: var(--smooth-blue);
     padding: 10px;
     text-decoration: none;
     color: white;
     border-radius: 5px;
+    transition: 1s ease;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.bottomdiv a:hover {
+    background-color: var(--blue);
+}
+
+.bottomdiv p{
+    margin-bottom: 50px;
 }
 
 .cousesInfo .col-md-4 p {
@@ -136,7 +147,7 @@
 }
 
 .cousesInfo ul {
-    text-align: center;
+    text-align: left;
 }
 
 .cousesInfo ul {
