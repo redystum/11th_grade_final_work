@@ -149,3 +149,22 @@
     padding: 10px;
     position: relative;
 }
+
+.partnersdiv{
+    background-color: var(--black);
+    color: white;
+    padding: 10px;
+}
+
+.imgPartnersDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgPartners{
+    flex: 1 1 10px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
