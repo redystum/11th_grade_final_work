@@ -167,4 +167,10 @@
     margin: 10px;
     text-align: center;
     padding: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.activePartner{
+    background-color: white !important;
+    filter: none !important;
 }
