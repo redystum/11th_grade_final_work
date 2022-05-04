@@ -186,3 +186,14 @@
 #partnerDescib{
     font-size: 25px;
 }
+
+.questionsrow{
+    padding: 20px;
+}
+
+.questionsdiv{
+    background-color: var(--black);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
