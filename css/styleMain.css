@@ -109,7 +109,7 @@
 .coursesdiv {
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.188);
     border-radius: 10px;
-    height: 100vh;
+    height: 80vh;
     padding-top: 20px;
     position: relative;
     margin-top: 50px;
@@ -137,7 +137,7 @@
     background-color: var(--blue);
 }
 
-.bottomdiv p{
+.bottomdiv p {
     margin-bottom: 50px;
 }
 
@@ -148,9 +148,6 @@
 
 .cousesInfo ul {
     text-align: left;
-}
-
-.cousesInfo ul {
     display: inline-block;
 }
 
@@ -161,18 +158,18 @@
     position: relative;
 }
 
-.partnersdiv{
+.partnersdiv {
     background-color: var(--black);
     color: white;
     padding: 10px;
 }
 
-.imgPartnersDiv{
+.imgPartnersDiv {
     display: flex;
     flex-wrap: wrap;
 }
 
-.imgPartners{
+.imgPartners {
     flex: 1 1 10px;
     border-radius: 10px;
     margin: 10px;
@@ -181,7 +178,11 @@
     filter: brightness(0) invert(1);
 }
 
-.activePartner{
+.activePartner {
     background-color: white !important;
     filter: none !important;
+}
+
+#partnerDescib{
+    font-size: 25px;
 }
