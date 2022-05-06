@@ -63,10 +63,10 @@ body {
     margin-top: 50px;
     border: var(--smooth-blue) solid 2px;
     background-color: transparent;
+    transition: 1s ease;
 }
 
 .submit_button:hover{
-    transition: 1s ease;
     background-color: var(--blue);
     border: var(--blue) solid 2px;
 
