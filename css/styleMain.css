@@ -22,11 +22,6 @@
     --orange: #f5c396;
 }
 
-*:focus {
-    outline: none;
-    box-shadow: none;
-}
-
 .maininput {
     width: 100%;
     height: 50px;
@@ -96,7 +91,6 @@
     padding-bottom: 10rem !important;
     padding-right: 25rem !important;
     text-align: left !important;
-
 }
 
 .carousel-caption a {
@@ -230,4 +224,5 @@
 
 .accordion-button:focus{
     outline: none !important;
+    box-shadow: none !important;
 }
