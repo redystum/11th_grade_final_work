@@ -91,7 +91,14 @@
     padding-bottom: 10rem !important;
     padding-right: 25rem !important;
     text-align: left !important;
+    color: #fff;
 }
+
+/* .carousel-caption h4{
+    mix-blend-mode: difference;
+    font-size: 20px;
+} dont work 
+*/ 
 
 .carousel-caption a {
     background-color: black;
