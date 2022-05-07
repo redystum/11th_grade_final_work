@@ -247,12 +247,12 @@
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="false" aria-controls="collapseOne">
               How does the certificate work?
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <hr>
@@ -322,11 +322,53 @@
     </div>
   </div>
 
+  <!-- adjust line -->
+  <div class="row" style="height: 100px;"></div>
+
   <!-- meter uma tabela complanos para os cursos, por ewxemplo o normal (poucas cenas) o pro (mais cenas) e expert (com tudo) -->
+
+  <!-- footer -->
+  <div class="row footer">
+    <div class="col-md-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">&ensp;Contacts: <br><br>
+            &ensp;<img src="img/telefone.png" alt="" width="25px">&ensp; Phone: 123 123 123 <br>
+            <br>
+            &ensp;<a href="https://www.instagram.com/csmiguelfatima/" target="_blank" rel="external"><img src="img/insta.png"
+                alt="" width="25px"></a>
+            &ensp;<a href="https://pt-pt.facebook.com/csmiguelfatima/" target="_blank" rel="external"><img src="img/fb.png"
+                alt="" width="25px"></a>
+          </div>
+          <div class="col-md-4">Useful links: <br><br>
+            <a href="#" rel="internal">Go to top</a> <br>
+            <a href="#" rel="internal">Home</a> <br>
+            <a href="#" rel="internal">Products</a> <br>
+            <a href="#" rel="internal">Office Course</a> <br>
+            <a href="#" rel="internal">Adobe Course</a> <br>
+            <a href="#" rel="internal">Autodesk Course</a> <br>
+            <a href="#" rel="internal">Certification</a>
+          </div>
+          <div class="col-md-4">About us: <br><br>
+            <a href="./html/sobre.html" rel="internal">About Us</a>
+          </div>
+        </div>
+        <br><br>
+          <p>&ensp;@ <span id="currentyear"></span> Art Design. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
 
 
 </div>
 
+
+<script>
+  var d = new Date();
+  var year = d.getFullYear();
+  document.getElementById("currentyear").innerHTML = year;
+</script>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

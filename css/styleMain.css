@@ -161,6 +161,7 @@
     background-color: var(--black);
     color: white;
     padding: 10px;
+    height: 125%;
 }
 
 .imgPartnersDiv {
@@ -225,4 +226,22 @@
 .accordion-button:focus{
     outline: none !important;
     box-shadow: none !important;
+}
+
+.footer{
+    background-color: var(--black);
+    color: white;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    transition: .4s ease;
+}
+
+.footer a:hover{
+    color: var(--blue);
+    text-decoration: none;
 }
