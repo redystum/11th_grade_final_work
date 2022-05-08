@@ -25,7 +25,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="loginformdiv" id="loginformdiv">
 
                     <?php
@@ -34,11 +34,13 @@
                     echo "<h1>Successfully logged out";
                     echo "<h4>We hope you'll come back soon!";
 
+                    backtomain();
+
                     ?>
 
                 </div>
             </div>
-            <div class="col-md-6 img_div">
+            <div class="col-md-8 img_div">
                 <img src="./img/log.png" alt="" class="img-fluid" id="loginimg">
             </div>
         </div>

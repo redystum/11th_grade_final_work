@@ -16,3 +16,12 @@ function hashGenerator($pwd){
 function test_hash($pwd, $hash){
     return hashGenerator($pwd) == $hash;
 }
+
+function is_loged(){
+    return $_SESSION['name'] != "";
+}
+
+function is_admin(){
+    return $_SESSION['type'] == "Admin";
+}
+

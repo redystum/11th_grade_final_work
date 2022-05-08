@@ -98,3 +98,55 @@ body {
     right: 0;
     z-index: -1;
 }
+
+.minifont{
+    font-size: 11px !important;
+}
+
+.image_options{
+    margin-top: 50px !important;
+}
+
+.rounded{
+    width: 25px;
+    height: 25px;
+}
+
+.imagepreview {
+    border-radius: .25rem !important;
+    width: 100px;
+    height: 100px;
+}
+
+.savefile{
+    width: fit-content;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    font-family: 'whitney', roboto, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    border: var(--smooth-blue) solid 2px;
+    background-color: transparent;
+    transition: 1s ease;
+}
+
+.savefile:hover{
+    background-color: var(--blue);
+    border: var(--blue) solid 2px;
+}
+
+.admprivileges{
+    margin-top: 50px !important;
+    position: relative;
+}
+.admprivileges h2{
+    text-align: center;
+}
+.admprivileges ul{
+    text-align: left;
+    display: inline-block;
+}

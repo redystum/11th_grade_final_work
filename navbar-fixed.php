@@ -2,7 +2,7 @@
 <?php require_once './includes/connect.php'; ?>
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <span class="navbar-brand">
         <img src="./img/logo_progeto_final_logo.png" alt="" width="30" class="d-inline-block align-text-top">
@@ -38,7 +38,7 @@
           </li>
         </ul>
         <span class="navbar-text">
-          <?php
+        <?php
             require_once './nav_image.php'
           ?>
         </span>

@@ -326,7 +326,7 @@
               <a href="#" rel="internal">Certification</a>
             </div>
             <div class="col-md-4">About us: <br><br>
-              <a href="./html/sobre.html" rel="internal">About Us</a>
+              <a href="#" rel="internal">About Us</a>
             </div>
           </div>
           <br><br>

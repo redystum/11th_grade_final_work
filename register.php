@@ -22,7 +22,6 @@ require_once './includes/functions.php'; ?>
   <!-- Navbar -->
   <?php require_once './navbar-fixed.php'; ?>
 
-
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">
@@ -30,44 +29,19 @@ require_once './includes/functions.php'; ?>
 
           <?php
 
-          $usr = $_POST['email'] ?? null;
-          $pwd = $_POST['pwd'] ?? null;
-
-          if (is_null($usr) || is_null($pwd)) {
-            if ($_SESSION['name'] != '') {
-
-              require_once './login_content.php';
-            } else {
-              require "./login_form.php";
-            }
+          if ($_SESSION['name'] != '') {
+            echo '<h2>Hi ' . $_SESSION['name'] . '!</h2>';
+            echo "<h4>You are successfully logged in.</h4>";
+            echo '<br><br><br>';
+            echo "You can go to the home page by clicking on the button below";
+            echo '<a href="index.php"><button type="submit" class="submit_button">Home</button></a>';
           } else {
-            $q = "SELECT userName, userPwd, userType FROM users WHERE userMail = '$usr' LIMIT 1";
-            $result = $db->query($q);
-            $reg = $result->fetch_object();
-            if (!$result) {
-              echo "<h2>Hi " . $usr . " !</h2>";
-              echo '<h4>Error connecting to database</h4>';
-            } else {
-              if ($result->num_rows == 0) {
-                echo "<h2>Hi " . $usr . " !</h2>";
-                echo '<h4>User not found</h4>';
-              } else {
-                if (test_hash($pwd, $reg->userPwd)) {
-                  echo "<h2>Hi " . $reg->userName . " !</h2>";
-                  echo "<h4>You are successfully logged in.</h4>";
-                  $_SESSION['name'] = $reg->userName;
-                  $_SESSION['type'] = $reg->userType;
-                } else {
-                  echo "<h4>Login failed</h4>";
-                }
-              }
-            }
+            require "./register_form.php";
           }
 
           backtomain();
+
           ?>
-
-
         </div>
       </div>
       <div class="col-md-6 img_div">
@@ -76,6 +50,15 @@ require_once './includes/functions.php'; ?>
     </div>
   </div>
 
+
+  <style>
+    .loginformdiv {
+      position: absolute;
+      top: 15% !important;
+      padding: 20px;
+      left: 5% !important;
+    }
+  </style>
   <script>
     const isOnTop = (id) => {
       let element = document.querySelector(id),
@@ -89,15 +72,19 @@ require_once './includes/functions.php'; ?>
     let element = document.getElementById('loginimg');
     if (isOnTop('#loginimg')) {
       element.style.opacity = '0.5';
+      console.log('on top');
     } else {
       element.style.opacity = '1';
+      console.log('not on top');
     }
 
     window.addEventListener('resize', function(event) {
       if (isOnTop('#loginimg')) {
         element.style.opacity = '0.5';
+        console.log('on top');
       } else {
         element.style.opacity = '1';
+        console.log('not on top');
       }
     }, true);
   </script>
