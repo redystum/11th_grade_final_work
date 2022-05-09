@@ -76,7 +76,8 @@ echo "<h4>You are successfully logged in.</h4>";
         <br><br>
         <h6>Change image</h6>
         <form method="post" action="" enctype='multipart/form-data'>
-            <input type='file' name='file' accept="image/png" />
+            <label for="imgchange" class="savefile">Upload Image</label>
+            <input type='file' name='file' accept="image/png" id="imgchange" class="dontexist" onchange="success_upload();"/>
             <br>
             <input type='submit' value='Save Image' name='btn_upload' class="savefile">
         </form>
@@ -98,3 +99,6 @@ if ($_SESSION['type'] == 'Admin') {
 <br><br><br>
 <p>You can logout by clicking the button below.</p>
 <a href="logout.php"><button type="submit" class="submit_button" style="margin-top: 0px !important;">Logout</button></a>
+
+
+<script src="./js/images_change.js"></script>

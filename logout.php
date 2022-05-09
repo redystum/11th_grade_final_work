@@ -31,7 +31,7 @@
                     <?php
 
                     logout();
-                    echo "<h1>Successfully logged out";
+                    echo "<h1><span class='sucesstext'>Successfully</span> logged out";
                     echo "<h4>We hope you'll come back soon!";
 
                     backtomain();

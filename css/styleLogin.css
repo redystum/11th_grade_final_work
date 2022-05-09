@@ -132,6 +132,7 @@ body {
     border: var(--smooth-blue) solid 2px;
     background-color: transparent;
     transition: 1s ease;
+    padding: 10px;
 }
 
 .savefile:hover{
@@ -149,4 +150,18 @@ body {
 .admprivileges ul{
     text-align: left;
     display: inline-block;
+}
+
+.sucesstext{
+    color: var(--green);
+}
+
+.errortext{
+    color: var(--orange);
+}
+
+.dontexist{
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
 }

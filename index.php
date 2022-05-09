@@ -26,7 +26,7 @@
   <?php require_once './navbar.php'; ?>
 
   <!-- container -->
-  <div class="container-fluid maincontainer">
+  <div class="container-fluid">
 
     <!-- carousel -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -97,7 +97,7 @@
       <div class="col-md-4">
         <div class="coursesdiv">
           <h2>Office</h2>
-          <h5>Software taught in this course:</h5>
+          <h5>Course of :</h5>
           <br>
           <ul>
             <?php
@@ -126,7 +126,7 @@
       <div class="col-md-4">
         <div class="coursesdiv">
           <h2>Adobe</h2>
-          <h5>Software taught in this course:</h5>
+          <h5>Course of :</h5>
           <br>
           <ul>
           <?php
@@ -155,7 +155,7 @@
       <div class="col-md-4">
         <div class="coursesdiv">
           <h2>Autodesk</h2>
-          <h5>Software taught in this course:</h5>
+          <h5>Course of :</h5>
           <br>
           <ul>
           <?php

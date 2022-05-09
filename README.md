@@ -25,3 +25,8 @@ https://coolors.co/f5c396-2a2b2a-3e78b2-92bae0-44dc5b
 ### Copyright
 https://br.freepik.com/fotos-gratis/jovem-empresaria-asiatica-usando-telefone-inteligente-com-tela-em-branco-enquanto-trabalha-em-casa-na-sala-de-estar_17897330.htm#query=office&position=33&from_view=search
 
+### cenas pa perguntar ao stor
+no carrousel meter a cor inversa no text e no botão
+como meter o site no server da escola
+como fazeer para importar varios tipo de formatods de imagens, pois uso um <\img> com src = *.png
+e pq é q algumas imagems não funcionam
