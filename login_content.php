@@ -1,6 +1,6 @@
 <?php
 echo '<h2>Hi ' . $_SESSION['name'] . '!</h2>';
-echo "<h4>You are successfully logged in.</h4>";
+echo "<h4>You are <span class='sucesstext'>successfully</span> logged in.</h4>";
 ?>
 
 

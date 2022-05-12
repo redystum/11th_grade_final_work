@@ -111,7 +111,7 @@
                   while($course = $result->fetch_object()){
                     echo "<li>$course->courseName</li>";
                   }
-
+                      
                 }
               }
               ?>
