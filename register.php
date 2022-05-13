@@ -72,19 +72,15 @@ require_once './includes/functions.php'; ?>
     let element = document.getElementById('loginimg');
     if (isOnTop('#loginimg')) {
       element.style.opacity = '0.5';
-      console.log('on top');
     } else {
       element.style.opacity = '1';
-      console.log('not on top');
     }
 
     window.addEventListener('resize', function(event) {
       if (isOnTop('#loginimg')) {
         element.style.opacity = '0.5';
-        console.log('on top');
       } else {
         element.style.opacity = '1';
-        console.log('not on top');
       }
     }, true);
   </script>

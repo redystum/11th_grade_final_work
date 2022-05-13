@@ -22,6 +22,8 @@
             </div>
             <p class="minifont">just for statistic</p>
 
+            <!-- termos de privacidade -->
+
 
             <input type="password" class="login_input" placeholder="Password">
             <br>
