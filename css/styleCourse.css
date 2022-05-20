@@ -92,24 +92,6 @@ tbody td {
     padding-right: 8%;
 }
 
-.footer{
-    background-color: var(--black);
-    color: white;
-    padding: 20px;
-    padding-bottom: 0px;
-}
-
-.footer a{
-    color: white;
-    text-decoration: none;
-    transition: .4s ease;
-}
-
-.footer a:hover{
-    color: var(--blue);
-    text-decoration: none;
-}
-
 .rounded{
     width: 25px;
     height: 25px;

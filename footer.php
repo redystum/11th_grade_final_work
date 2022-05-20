@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="./css/footer.css">
+
 <div class="row footer">
   <div class="col-md-12">
     <div class="container">
@@ -26,3 +28,9 @@
     </div>
   </div>
 </div>
+
+<script>
+    var d = new Date();
+    var year = d.getFullYear();
+    document.getElementById("currentyear").innerHTML = year;
+</script>

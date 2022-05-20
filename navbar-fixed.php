@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="./css/nav.css">
+
+
 <?php require_once './includes/login.php'; ?>
 <?php require_once './includes/connect.php'; ?>
 
@@ -17,16 +20,16 @@
             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
+            <a class="nav-link" href="./products.php?product=0">Products</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Learn
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Office</a></li>
-              <li><a class="dropdown-item" href="#">Adobe</a></li>
-              <li><a class="dropdown-item" href="#">AutoDesk</a></li>
+            <li><a class="dropdown-item" href="products.php?product=2">Office</a></li>
+            <li><a class="dropdown-item" href="products.php?product=1">Adobe</a></li>
+            <li><a class="dropdown-item" href="products.php?product=3">AutoDesk</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>

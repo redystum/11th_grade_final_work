@@ -38,7 +38,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./img/adobe.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block text-black">
+          <div class="carousel-caption d-none d-md-block">
             <h4><b class="fs-3">Easy</b> job <br> with <b class="fs-3">high</b> <br> Adobe knowledge</h4>
             <br>
             <a href="">See the course</a>
@@ -46,7 +46,7 @@
         </div>
         <div class="carousel-item">
           <img src="./img/autodesk.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block text-white">
+          <div class="carousel-caption d-none d-md-block">
             <h4><b class="fs-3">Create</b> <br> <b class="fs-3">high</b> quality 3D <br> artwork</h4>
             <br>
             <a href="">See the course</a>
@@ -54,7 +54,7 @@
         </div>
         <div class="carousel-item">
           <img src="./img/office.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block text-black">
+          <div class="carousel-caption d-none d-md-block">
             <h4>Be the <br> <b class="fs-3">best</b> at <br> Office software</h4>
             <br>
             <a href="">See the course</a>
@@ -97,7 +97,7 @@
       <div class="col-md-4">
         <div class="coursesdiv">
           <h2>Office</h2>
-          <h5>Course of :</h5>
+          <h5>Courses in this category:</h5>
           <br>
           <ul>
             <?php
@@ -119,14 +119,14 @@
           <div class="bottomdiv">
             <p>The course offers a high level of knowledge in the area, with expert teachers, completely online so you can
               watch wherever and whenever you want</p>
-            <a href="">See the course</a>
+            <a href="products.php?product=2">See the course</a>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="coursesdiv">
           <h2>Adobe</h2>
-          <h5>Course of :</h5>
+          <h5>Courses in this category</h5>
           <br>
           <ul>
           <?php
@@ -148,14 +148,14 @@
           <div class="bottomdiv">
             <p>The course offers a high level of knowledge in the area, with expert teachers, completely online so you can
               watch wherever and whenever you want</p>
-            <a href="">See the course</a>
+            <a href="products.php?product=1">See the course</a>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="coursesdiv">
           <h2>Autodesk</h2>
-          <h5>Course of :</h5>
+          <h5>Courses in this category</h5>
           <br>
           <ul>
           <?php
@@ -177,7 +177,7 @@
           <div class="bottomdiv">
             <p>The course offers a high level of knowledge in the area, with expert teachers, completely online so you can
               watch wherever and whenever you want</p>
-            <a href="">See the course</a>
+            <a href="products.php?product=3">See the course</a>
           </div>
         </div>
       </div>
@@ -308,12 +308,6 @@
 
   </div>
 
-
-  <script>
-    var d = new Date();
-    var year = d.getFullYear();
-    document.getElementById("currentyear").innerHTML = year;
-  </script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

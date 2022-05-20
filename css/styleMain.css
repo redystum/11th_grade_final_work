@@ -88,11 +88,11 @@
     text-align: left !important;
 }
 
-/* .carousel-caption h4{
-    mix-blend-mode: difference;
+.carousel-caption h4{
+    mix-blend-mode: exclusion !important;
     font-size: 20px;
-} dont work 
-*/ 
+}
+
 
 .carousel-caption a {
     background-color: black;
@@ -229,24 +229,6 @@
 .accordion-button:focus{
     outline: none !important;
     box-shadow: none !important;
-}
-
-.footer{
-    background-color: var(--black);
-    color: white;
-    padding: 20px;
-    padding-bottom: 0px;
-}
-
-.footer a{
-    color: white;
-    text-decoration: none;
-    transition: .4s ease;
-}
-
-.footer a:hover{
-    color: var(--blue);
-    text-decoration: none;
 }
 
 .rounded{

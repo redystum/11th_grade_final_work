@@ -62,7 +62,7 @@ echo "<h4>You are <span class='sucesstext'>successfully</span> logged in.</h4>";
                         if (!$result) {
                             echo '<p>Error connecting to database</p>';
                         }
-                        echo "<p>Sucefully uploaded!</p>";
+                        echo "<p>Successfully uploaded!</p>";
                     }
                 } else {
                     echo "<p>This file is not supported!</p>";

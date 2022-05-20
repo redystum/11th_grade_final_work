@@ -26,10 +26,14 @@ https://coolors.co/f5c396-2a2b2a-3e78b2-92bae0-44dc5b
 https://br.freepik.com/fotos-gratis/jovem-empresaria-asiatica-usando-telefone-inteligente-com-tela-em-branco-enquanto-trabalha-em-casa-na-sala-de-estar_17897330.htm#query=office&position=33&from_view=search
 
 ### cenas pa perguntar ao stor
-no carrousel meter a cor inversa no text e no botão
-como meter o site no server da escola
-como fazeer para importar varios tipo de formatods de imagens, pois uso um <\img> com src = *.png
-e pq é q algumas imagems não funcionam
+1- no carrousel meter a cor inversa no text e no botão    
+2- como fazeer para importar varios tipo de formatods de imagens, pois uso um <\img> com src = *.png
+3- mudar class ou css em php
+
+Solução:
+1- ver cenas do blend e tirar o tex-color do bootstrap
+2- na db mter no campo de imagem o .png ou .jpg ou sla, se n tiver meter 0
+3- ver na net
 
 
 ### fotos do pexels
@@ -62,7 +66,3 @@ https://www.pexels.com/photo/portrait-of-a-beautiful-woman-with-red-hair-looking
 https://www.pexels.com/photo/portrait-of-a-brunette-with-curly-hair-wearing-black-eyeglasses-4320084/
 
 ## Nenhuma imagem otimizada! Passar com o handbrake em tudo
-
-
-### Crear mais uma tabela em sql
-teachers, para asmazenar as suas descrições e ser obrigado a usar inner join para mostrar as descrições

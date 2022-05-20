@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "whitney";
+    src: url("../fonts/Whitney-Book-Bas.otf");
+}
+
+* {
+    --smooth-blue: #92bae0;
+    --blue: #3e78b2;
+    --black: #2a2b2a;
+    --green: #44dc5b;
+    --orange: #f5c396;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.small {
+    font-size: 0.7em;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.seemorebtn {
+    background-color: var(--smooth-blue);
+    padding: 10px;
+    text-decoration: none;
+    color: white !important;
+    border-radius: 5px;
+    transition: 1s ease;
+    width: 100%;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.seemorebtn:hover {
+    background-color: var(--blue);
+}
