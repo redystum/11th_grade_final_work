@@ -10,7 +10,7 @@
     --blue: #3e78b2;
     --black: #2a2b2a;
     --green: #44dc5b;
-    --orange: #f5c396;
+    --orange: #e96d33;
 }
 
 ::-webkit-scrollbar {
@@ -164,4 +164,19 @@ body {
     opacity: 0;
     z-index: -1;
     position: absolute;
+}
+
+.hide{
+    display: none;
+}
+
+.formError{
+    color: var(--orange);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.formErrorinp{
+    border-bottom: 2px solid var(--orange);
+    transition: 1s ease;
 }

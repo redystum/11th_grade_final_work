@@ -1,0 +1,19 @@
+Intel Core i9-12900K 16-Core 2.4GHz, Turbo 5.2GHz 30MB Skt1700 || 628,90
+Water Cooler CPU NZXT Kraken Z73 360mm || 279,90
+ATX Asus ProArt Z690-Creator WiFi || 520,90
+2x Asus TUF Gaming GeForce RTX 3090 Ti 24GB GDDR6X OC Edition || 2* 2379,00
+Corsair Vengeance 128GB (4x32GB) DDR5-5200MHz CL40 || 2* 582,90
+M.2 2280 Western Digital Black SN750 4TB 3D NAND NVMe and SSD 2.5" Samsung 860 Pro 4TB MLC V-NAND SATA || 969,90 + 849,90
+Corsair AX1600i Full Modular || 540,90
+ATX Nox Hummer Void Silent Black || sla nem cabe
+Windows 11 Pro
+
+628.90 + 279.90 + 520.90 + 2*2379.00 + 2*582.90 + 969.90 + 849.90 = 9173.3€
+
+
+
+AMD Ryzen™ 5 PRO 5650G Hexa-Core, 3.9GHz, Turbo 4.4GHz, 19MB Cache || Cooler OEM AMD || Micro-ATX MSI A520M-A Pro || AMD Radeon™ Graphics || G.SKILL Aegis 16GB (2x8GB) DDR4-3200MHz CL16 || SSD M.2 2280 Gigabyte 512GB TLC NVMe || Nox 450W 80 PLUS WHITE || Micro-ATX Nox Hummer Zero Core Black Edition || Windows 11 Home
+
+Intel Core i7-12700 12-Core, 1.6GHz, Turbo 4.9GHz, 25MB Cache || Cooler OEM Intel || Micro-ATX Asus Prime B660M-A WiFi D4 || NVidia Geforce RTX 2060 || G.SKILL Aegis 16GB (2x8GB) DDR4-3200MHz CL16 || SSD M.2 2280 Gigabyte 512GB TLC NVMe || Seasonic S12III Series 650W 80PLUS Bronze || ATX Nox Hummer Void Silent Black || Windows 11 Home
+
+Intel Core i9-12900K 16-Core 2.4GHz, Turbo 5.2GHz 30MB Skt1700 || Water Cooler CPU NZXT Kraken Z73 360mm || ATX Asus ProArt Z690-Creator WiFi || 2x Asus TUF Gaming GeForce RTX 3090 Ti 24GB GDDR6X OC Edition || Corsair Vengeance 128GB (4x32GB) DDR5-5200MHz CL40  || M.2 2280 Western Digital Black SN750 4TB 3D NAND NVMe and SSD 2.5" Samsung 860 Pro 4TB MLC V-NAND SATA|| Corsair AX1600i Full Modular || ATX Nox Hummer Void Silent Black || Windows 11 Pro

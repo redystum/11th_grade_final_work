@@ -14,7 +14,7 @@
     --blue: #3e78b2;
     --black: #2a2b2a;
     --green: #44dc5b;
-    --orange: #f5c396;
+    --orange: #e96d33;
 }
 
 .maininput {
@@ -111,7 +111,7 @@
 .coursesdiv {
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.188);
     border-radius: 10px;
-    height: 88vh;
+    height: 100vh;
     padding-top: 20px;
     position: relative;
     margin-top: 50px;
@@ -175,9 +175,9 @@
 .imgPartners {
     flex: 1 1 10px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
-    padding: 20px;
+    padding: 1%;
     filter: brightness(0) invert(1);
 }
 

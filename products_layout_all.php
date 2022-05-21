@@ -30,13 +30,14 @@
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/adobe.png" class="d-block w-100" alt="">
+                        <img src="./img/'. $atualCourse->productName . '_course_1.png" class="d-block w-100" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/adobe.png" class="d-block w-100" alt="">
+                    <img src="./img/'. $atualCourse->productName . '_course_2.png" class="d-block w-100" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/adobe.png" class="d-block w-100" alt="">
+                    <img src="./img/'. $atualCourse->productName . '_course_3.png" class="d-block w-100" alt="">
+
                     </div>
                 </div>
             </div>
@@ -48,8 +49,8 @@
         <div class="col-md-6">
         <h3>' . $atualCourse->productName . '</h3>
         <br>
-        <h5>courses within the ' . $atualCourse->productName . ' category:</h5>
-        <p class="small">Click on the course name for more details</p>';
+        <h5>Courses within the ' . $atualCourse->productName . ' category:</h5>
+        <p class="small">Click on the course name for more details</p><ul>';
 
         $result = $db->query("SELECT * FROM courses WHERE courseCategory = '" . $atualCourse->productName . " '");
         if (!$result) {
@@ -64,7 +65,7 @@
             }
         }
 
-        echo '<br>';
+        echo '</ul><br>';
 
         $result = $db->query("SELECT * FROM products WHERE productName = '" . $atualCourse->productName . " '");
         if (!$result) {
@@ -106,19 +107,7 @@
         <!-- carrousel -->
         <div class="row">
         <div class="col-md-6">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/adobe.png" class="d-block w-100" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/adobe.png" class="d-block w-100" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/adobe.png" class="d-block w-100" alt="">
-                    </div>
-                </div>
-            </div>
+        <img src="./img/' . $atualPC->productName . '.jpg" class="img-fluid">
         </div>';
 
         echo '

@@ -7,6 +7,9 @@ if (!isset($_SESSION['name']))
 {
     $_SESSION['name'] = "";
     $_SESSION['type'] = "";
+    $_SESSION['mailError'] = "no";
+    $_SESSION['phoneError'] = "no";
+    $_SESSION['theme'] = "white";
 }
 
 function hashGenerator($pwd){

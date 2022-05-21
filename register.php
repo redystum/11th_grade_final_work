@@ -29,15 +29,62 @@ require_once './includes/functions.php'; ?>
 
           <?php
 
-          if ($_SESSION['name'] != '') {
-            echo '<h2>Hi ' . $_SESSION['name'] . '!</h2>';
-            echo "<h4>You are successfully logged in.</h4>";
-            echo '<br><br><br>';
-            echo "You can go to the home page by clicking on the button below";
-            echo '<a href="index.php"><button type="submit" class="submit_button">Home</button></a>';
+          $mail = $_POST['email'] ?? null;
+          $pwd = $_POST['pwd'] ?? null;
+          $name = $_POST['name'] ?? null;
+          $phone = $_POST['phone'] ?? null;
+          $sex = $_POST['sex'] ?? null;
+
+          if (is_null($name)) {
+            if ($_SESSION['name'] != '') {
+              echo '<h2>Hi ' . $_SESSION['name'] . '!</h2>';
+              echo "<h4>You are <span class='sucesstext'>successfully</span> logged in.</h4>";
+              echo '<br><br><br>';
+              echo "You can go to the home page by clicking on the button below";
+              echo '<a href="index.php"><button type="submit" class="submit_button">Home</button></a>';
+            } else {
+              require "./register_form.php";
+            }
           } else {
-            require "./register_form.php";
+
+            $verifyEmail = $db->query("SELECT * FROM users WHERE userMail = '$mail'");
+            $verifyPhone = $db->query("SELECT * FROM users WHERE userPhone = '$phone'");
+
+            if ($verifyEmail) {
+              if ($verifyEmail->num_rows > 0) {
+                $_SESSION['mailError'] = "yes";
+              } else {
+                $_SESSION['mailError'] = "no";
+              }
+            } else {
+              $_SESSION['mailError'] = "no";
+            }
+            if ($verifyPhone) {
+              if ($verifyPhone->num_rows > 0) {
+                $_SESSION['phoneError'] = "yes";
+              } else {
+                $_SESSION['phoneError'] = "no";
+              }
+            } else {
+              $_SESSION['phoneError'] = "no";
+            }
+
+            if ($_SESSION['mailError'] == "yes" || $_SESSION['phoneError'] == "yes") {
+              require_once './register_form.php';
+            } else {
+
+              $pwdMd5 = md5($pwd);
+              $q = "INSERT INTO users (userName, userPwd, userMail, userSex, UserPhone) VALUES ('$name', '$pwdMd5', '$mail', '$sex', '$phone')";
+
+              // $result = $db->query($q);
+
+              echo '<h2>Registered <span class="sucesstext">successfully</span></h2>';
+              echo '<p>Go to the login page to login!</p>';
+              echo '<a href="login.php"><button type="submit" class="submit_button">Go to the login page</button></a>';
+            }
           }
+
+
 
           backtomain();
 
@@ -83,6 +130,17 @@ require_once './includes/functions.php'; ?>
         element.style.opacity = '1';
       }
     }, true);
+  </script>
+
+  <script>
+    function onlyNumberKey(evt) {
+
+      // Only ASCII character in that range allowed
+      var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+      if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+        return false;
+      return true;
+    }
   </script>
 
   <!-- Optional JavaScript -->

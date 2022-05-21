@@ -115,7 +115,7 @@
         <?php
         $c = $_GET['course'] ?? 0;
         $result = $db->query("SELECT * FROM courses WHERE courseId = '$c'");
-        echo $result->fetch_assoc()['coursePrice'] . ".0$";
+        echo $result->fetch_assoc()['coursePrice'] . ".0€";
         ?>, Base plan</p>
     </div>
   </div>
@@ -211,7 +211,7 @@
                 <?php
                 $c = $_GET['course'] ?? 0;
                 $result = $db->query("SELECT * FROM courses WHERE courseId = '$c'");
-                echo $result->fetch_assoc()['coursePrice'] . ".0$";
+                echo $result->fetch_assoc()['coursePrice'] . ".0€";
                 ?>
               </h5>
               <p class="plandesc">Full course but some features locked</p>
@@ -223,7 +223,7 @@
                 <?php
                 $c = $_GET['course'] ?? 0;
                 $result = $db->query("SELECT * FROM courses WHERE courseId = '$c'");
-                echo $result->fetch_assoc()['coursePrice'] + 50 . ".0$";
+                echo $result->fetch_assoc()['coursePrice'] + 50 . ".0€";
                 ?>
               </h5>
               <p class="plandesc">Full course all unlocked</p>
@@ -235,7 +235,7 @@
                 <?php
                 $c = $_GET['course'] ?? 0;
                 $result = $db->query("SELECT * FROM courses WHERE courseId = '$c'");
-                echo $result->fetch_assoc()['coursePrice'] + 90 . ".0$";
+                echo $result->fetch_assoc()['coursePrice'] + 90 . ".0€";
                 ?>
               </h5>
               <p class="plandesc">Full course all unlocked and some extras</p>

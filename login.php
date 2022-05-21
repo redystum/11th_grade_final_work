@@ -35,7 +35,6 @@ require_once './includes/functions.php'; ?>
 
           if (is_null($usr) || is_null($pwd)) {
             if ($_SESSION['name'] != '') {
-
               require_once './login_content.php';
             } else {
               require "./login_form.php";
