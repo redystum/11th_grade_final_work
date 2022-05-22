@@ -33,11 +33,11 @@
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Certification</a></li>
+            <li><a class="dropdown-item" href="Certification.php">Certification</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About&nbsp;us</a> <!-- Mission, Vision & Values -->
+          <a class="nav-link" href="./about_us.php">About&nbsp;us</a> <!-- Mission, Vision & Values -->
         </li>
       </ul>
       <span class="navbar-text">
