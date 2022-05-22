@@ -74,7 +74,7 @@ require_once './includes/functions.php'; ?>
             } else {
 
               $pwdMd5 = md5($pwd);
-              $q = "INSERT INTO users (userName, userPwd, userMail, userSex, UserPhone) VALUES ('$name', '$pwdMd5', '$mail', '$sex', '$phone')";
+              $q = "INSERT INTO users (userName, userPwd, userMail, userSex, userPhone, userCart) VALUES ('$name', '$pwdMd5', '$mail', '$sex', '$phone', '{\"cart\":[],\"purchased\":[]}')";
 
               // $result = $db->query($q);
 

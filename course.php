@@ -41,6 +41,24 @@
     if ($result->num_rows == 0) {
       require_once './404.php';
     } else {
+
+      $course = $_POST['submitCourse'] ?? null;
+
+      if ($course){
+        if ($_SESSION['name']==''){
+          header('location: ./login.php');
+        } else{
+          $result = $db->query("SELECT * FROM users WHERE userMail = '". $_SESSION['mail'] ."'");
+          if ($result){
+            $oldcart = $result->fetch_assoc()['userCart'];
+            $cart =  json_decode($oldcart, true);
+            array_push($cart['cart'], $course);
+            $cart = json_encode($cart);
+            $db->query("UPDATE users SET userCart = '$cart' WHERE userMail = '". $_SESSION['mail'] ."'");
+          }
+        }
+      }
+
       require_once './courses_layout.php';
     }
   } else {

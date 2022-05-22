@@ -56,6 +56,7 @@ require_once './includes/functions.php'; ?>
                   echo "<h4>You are <span class='sucesstext'>successfully</span> logged in.</h4>";
                   $_SESSION['name'] = $reg->userName;
                   $_SESSION['type'] = $reg->userType;
+                  $_SESSION['mail'] = $usr;
                 } else {
                   echo "<h4>Login failed</h4>";
                 }
@@ -69,8 +70,10 @@ require_once './includes/functions.php'; ?>
 
         </div>
       </div>
-      <div class="col-md-6 img_div">
-        <img src="./img/log.png" alt="" class="img-fluid" id="loginimg">
+      <div class="col-md-6">
+        <div class="img_div">
+          <img src="./img/log.png" alt="" class="img-fluid" id="loginimg">
+        </div>
       </div>
     </div>
   </div>

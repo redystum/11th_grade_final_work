@@ -15,8 +15,8 @@
       $c = $_GET['course'] ?? 0;
       $result = $db->query("SELECT * FROM courses WHERE courseId = '$c'");
       $course = $result->fetch_assoc()['courseName'];
-      $image = './img/Logos/' . str_replace(' ', '', $course) . 'Logo.png'; 
-      echo '<img src="'.$image.'" alt="" width="50px">';
+      $image = './img/Logos/' . str_replace(' ', '', $course) . 'Logo.png';
+      echo '<img src="' . $image . '" alt="" width="50px">';
       ?>
 
 
@@ -215,7 +215,13 @@
                 ?>
               </h5>
               <p class="plandesc">Full course but some features locked</p>
-              <a href="#courseplans"><button class="cartbtn">Add to cart</button></a>
+              <?php
+              $c = $_GET['course'] ?? 0;
+              $result = $db->query("SELECT * FROM courses WHERE courseId = '$c'");
+              echo '<form action="./course.php?course='.$c.'#courseplans" method="post">
+                  <button class="cartbtn" name="submitCourse" type="submit" value="'.$result->fetch_assoc()['courseName'].'__basic">Add to cart</button>
+                </form>';
+              ?>
             </th>
             <th scope="col">
               <h5 class="planname">Pro Plan</h5>
@@ -227,7 +233,13 @@
                 ?>
               </h5>
               <p class="plandesc">Full course all unlocked</p>
-              <a href="#courseplans"><button class="cartbtn">Add to cart</button></a>
+              <?php
+              $c = $_GET['course'] ?? 0;
+              $result = $db->query("SELECT * FROM courses WHERE courseId = '$c'");
+              echo '<form action="./course.php?course='.$c.'#courseplans" method="post">
+                  <button class="cartbtn" name="submitCourse" type="submit" value="'.$result->fetch_assoc()['courseName'].'__pro">Add to cart</button>
+                </form>';
+              ?>
             </th>
             <th scope="col">
               <h5 class="planname">Extreme Plan</h5>
@@ -239,7 +251,13 @@
                 ?>
               </h5>
               <p class="plandesc">Full course all unlocked and some extras</p>
-              <a href="#courseplans"><button class="cartbtn">Add to cart</button></a>
+              <?php
+              $c = $_GET['course'] ?? 0;
+              $result = $db->query("SELECT * FROM courses WHERE courseId = '$c'");
+              echo '<form action="./course.php?course='.$c.'#courseplans" method="post">
+                  <button class="cartbtn" name="submitCourse" type="submit" value="'.$result->fetch_assoc()['courseName'].'__extreme">Add to cart</button>
+                </form>';
+              ?>
             </th>
           </tr>
         </thead>

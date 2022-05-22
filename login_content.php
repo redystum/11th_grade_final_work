@@ -3,6 +3,11 @@ echo '<h2>Hi ' . $_SESSION['name'] . '!</h2>';
 echo "<h4>You are <span class='sucesstext'>successfully</span> logged in.</h4>";
 ?>
 
+<h4>Cart / Courses</h4>
+<p>You can access your cart and purchased courses <br> by clicking on the button below.</p>
+
+<a href="./cart.php"><button class="savefile">Cart / Courses</button></a>
+
 
 <div class="image_options">
     <h5>Image options</h5>
