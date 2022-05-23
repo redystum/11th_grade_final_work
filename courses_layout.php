@@ -153,7 +153,7 @@
             <?php
             $c = $_GET['course'] ?? 0;
             $result = $db->query("select teachers.teacherName, teachers.teacherDescription, teachers.teacherImage, courses.courseName, courses.courseId from courses inner join teachers on courses.courseName = teachers.teacherCourse where courseId = $c order by teacherID asc;");
-            echo '<img src="./img/teachers/' . $result->fetch_assoc()["teacherImage"] . '." alt="" class="img-fluid teacherimg" width="150px">'
+            echo '<img src="./img/teachers/' . $result->fetch_assoc()["teacherImage"] . '" alt="" class="img-fluid teacherimg" width="150px">'
             ?>
             <h6>
               <?php
@@ -167,7 +167,7 @@
             <?php
             $c = $_GET['course'] ?? 0;
             $result = $db->query("select teachers.teacherName, teachers.teacherDescription, teachers.teacherImage, courses.courseName, courses.courseId from courses inner join teachers on courses.courseName = teachers.teacherCourse where courseId = $c order by teacherID desc;");
-            echo '<img src="./img/teachers/' . $result->fetch_assoc()["teacherImage"] . '." alt="" class="img-fluid teacherimg" width="150px">'
+            echo '<img src="./img/teachers/' . $result->fetch_assoc()["teacherImage"] . '" alt="" class="img-fluid teacherimg" width="150px">'
             ?>
             <h6>
               <?php

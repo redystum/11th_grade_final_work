@@ -33,7 +33,7 @@
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="Certification.php">Certification</a></li>
+            <li><a class="dropdown-item" href="certification.php">Certification</a></li>
           </ul>
         </li>
         <li class="nav-item">

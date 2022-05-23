@@ -76,11 +76,13 @@ require_once './includes/functions.php'; ?>
               $pwdMd5 = md5($pwd);
               $q = "INSERT INTO users (userName, userPwd, userMail, userSex, userPhone, userCart) VALUES ('$name', '$pwdMd5', '$mail', '$sex', '$phone', '{\"cart\":[],\"purchased\":[]}')";
 
-              // $result = $db->query($q);
+              $result = $db->query($q);
 
               echo '<h2>Registered <span class="sucesstext">successfully</span></h2>';
               echo '<p>Go to the login page to login!</p>';
               echo '<a href="login.php"><button type="submit" class="submit_button">Go to the login page</button></a>';
+
+              $_POST = array();
             }
           }
 
