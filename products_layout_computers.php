@@ -74,7 +74,7 @@
         </thead>
         <tbody>
             <tr>
-                <th scope="row">
+                <th scope="row ">
                     <span class="material-symbols-outlined">
                         memory
                     </span>

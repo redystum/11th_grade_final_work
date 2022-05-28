@@ -12,15 +12,15 @@
         </div>
         <div class="col-md-4">Useful links: <br><br>
           <a href="#" rel="internal">Go to top</a> <br>
-          <a href="#" rel="internal">Home</a> <br>
-          <a href="#" rel="internal">Products</a> <br>
-          <a href="#" rel="internal">Office Course</a> <br>
-          <a href="#" rel="internal">Adobe Course</a> <br>
-          <a href="#" rel="internal">Autodesk Course</a> <br>
-          <a href="#" rel="internal">Certification</a>
+          <a href="./index.php" rel="internal">Home</a> <br>
+          <a href="./products.php?product=0" rel="internal">Products</a> <br>
+          <a href="./products.php?product=2" rel="internal">Office Course</a> <br>
+          <a href="./products.php?product=1" rel="internal">Adobe Course</a> <br>
+          <a href="./products.php?product=3" rel="internal">Autodesk Course</a> <br>
+          <a href="./certification.php" rel="internal">Certification</a>
         </div>
         <div class="col-md-4">About us: <br><br>
-          <a href="#" rel="internal">About Us</a>
+          <a href="./about_us.php" rel="internal">About Us</a>
         </div>
       </div>
       <br><br>

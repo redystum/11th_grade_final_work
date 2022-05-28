@@ -33,6 +33,8 @@
 
   <?php require_once './navbar.php'; ?>
 
+  <button type="button" class="dontexist" onclick="showdialog();" id="showdialogbtn"></button>
+
   <?php
   $c = $_GET['course'] ?? 0;
   $result = $db->query("SELECT * FROM courses WHERE courseId = '$c'");
@@ -44,20 +46,27 @@
 
       $course = $_POST['submitCourse'] ?? null;
 
-      if ($course){
-        if ($_SESSION['name']==''){
+      if ($course) {
+        if ($_SESSION['name'] == '') {
           header('location: ./login.php');
-        } else{
-          $result = $db->query("SELECT * FROM users WHERE userMail = '". $_SESSION['mail'] ."'");
-          if ($result){
+        } else {
+          $result = $db->query("SELECT * FROM users WHERE userMail = '" . $_SESSION['email'] . "'");
+          if ($result) {
             $oldcart = $result->fetch_assoc()['userCart'];
             $cart =  json_decode($oldcart, true);
             array_push($cart['cart'], $course);
             $cart = json_encode($cart);
-            $db->query("UPDATE users SET userCart = '$cart' WHERE userMail = '". $_SESSION['mail'] ."'");
+            $db->query("UPDATE users SET userCart = '$cart' WHERE userMail = '" . $_SESSION['email'] . "'");
+            echo '<script>
+            setTimeout(function(){
+              document.getElementById("showdialogbtn").click();
+            }, 1000);
+      </script>';
           }
         }
       }
+
+      $_POST = array();
 
       require_once './courses_layout.php';
     }
@@ -66,6 +75,28 @@
   }
 
   ?>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="./img/logo_progeto_final_logo.png" class="rounded me-2" alt="">
+          <strong class="me-auto">Artistic Design</strong>
+          <small></small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Suceffully added to cart!
+        </div>
+      </div>
+    </div>
+
+  <script>
+    function showdialog() {
+      const toastTrigger = document.getElementById('liveToastBtn')
+      const toastLiveExample = document.getElementById('liveToast')
+      const toast = new bootstrap.Toast(toastLiveExample)
+      toast.show()
+    }
+  </script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -56,7 +56,7 @@ require_once './includes/functions.php'; ?>
                   echo "<h4>You are <span class='sucesstext'>successfully</span> logged in.</h4>";
                   $_SESSION['name'] = $reg->userName;
                   $_SESSION['type'] = $reg->userType;
-                  $_SESSION['mail'] = $usr;
+                  $_SESSION['email'] = $usr;
                 } else {
                   echo "<h4>Login failed</h4>";
                 }

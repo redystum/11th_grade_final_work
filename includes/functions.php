@@ -7,6 +7,9 @@ function logout(){
     $_SESSION['mailError'] = "no";
     $_SESSION['phoneError'] = "no";
     $_SESSION['theme'] = "white";
+    $_SESSION['userError'] = "no";
+    $_SESSION['pwdError'] = "no";
+
 }
 
 function backtomain(){

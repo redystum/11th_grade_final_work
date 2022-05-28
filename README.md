@@ -26,14 +26,7 @@ https://coolors.co/e96d33-2a2b2a-3e78b2-92bae0-44dc5b
 https://br.freepik.com/fotos-gratis/jovem-empresaria-asiatica-usando-telefone-inteligente-com-tela-em-branco-enquanto-trabalha-em-casa-na-sala-de-estar_17897330.htm#query=office&position=33&from_view=search
 
 ### cenas pa perguntar ao stor
-1- no carrousel meter a cor inversa no text e no botão    
-2- como fazeer para importar varios tipo de formatods de imagens, pois uso um <\img> com src = *.png
-3- mudar class ou css em php
-
-Solução:
-1- ver cenas do blend e tirar o tex-color do bootstrap
-2- na db mter no campo de imagem o .png ou .jpg ou sla, se n tiver meter 0
-3- ver na net
+1- quando se atualiza a pagina no cart ele renvia o form sla pq mesmo eleminando as variaveis
 
 
 ### fotos do pexels

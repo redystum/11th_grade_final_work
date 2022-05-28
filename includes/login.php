@@ -11,7 +11,8 @@ if (!isset($_SESSION['name']))
     $_SESSION['phoneError'] = "no";
     $_SESSION['theme'] = "white";
     $_SESSION['email'] = "";
-
+    $_SESSION['userError'] = "no";
+    $_SESSION['pwdError'] = "no";
 }
 
 function hashGenerator($pwd){

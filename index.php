@@ -161,7 +161,7 @@
           <?php
               $result = $db->query("SELECT * FROM courses WHERE courseCategory = 'Autodesk'");
               if (!$result) {
-                echo "Something went wrong loading the course a baixo";
+                echo "Something went wrong loading the course";
                 echo $db->error;
               } else {
                 if ($result->num_rows == 0) {
