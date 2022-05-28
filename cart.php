@@ -18,6 +18,8 @@
     echo '<link rel="stylesheet" href="./css/cart.css">';
   }
 ?>
+<link rel="shortcut icon" href="./img/Ruben_Alves_logo_progeto_final_logo.ico" type="image/x-icon">
+
 </head>
 
 <body>

@@ -21,6 +21,7 @@ require_once './includes/functions.php'; ?>
   }
 
 ?>
+<link rel="shortcut icon" href="./img/Ruben_Alves_logo_progeto_final_logo.ico" type="image/x-icon">
 
 </head>
 
