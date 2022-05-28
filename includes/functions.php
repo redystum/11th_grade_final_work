@@ -6,7 +6,7 @@ function logout(){
     unset($_SESSION['email']);
     $_SESSION['mailError'] = "no";
     $_SESSION['phoneError'] = "no";
-    $_SESSION['theme'] = "white";
+    $_SESSION['theme'] = "light";
     $_SESSION['userError'] = "no";
     $_SESSION['pwdError'] = "no";
 

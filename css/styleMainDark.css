@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "whitney";
+    src: url("./fonts/Whitney-Book-Bas.otf");
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+* {
+    --smooth-blue: #92bae0;
+    --blue: #3e78b2;
+    --black: #2a2b2a;
+    --green: #44dc5b;
+    --orange: #e96d33;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.maininput {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-family: "whitney", 'Roboto', sans-serif;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.188);
+}
+
+.maininputdiv {
+    margin-top: 20px;
+}
+
+.Stext {
+    opacity: 0;
+    transform: translateY(0px) !important;
+    transition: 1s ease;
+}
+
+.arrowf {
+    opacity: 0;
+    transform: translateX(30px) !important;
+    transition: 1s ease;
+    filter: invert(1);
+}
+
+.arrowb {
+    opacity: 0;
+    transform: translateX(-30px) !important;
+    transition: 1s ease;
+    filter: invert(1);
+}
+
+.StextAtive {
+    opacity: 1;
+    transform: translateY(0px) !important;
+}
+
+.arrowbAtive {
+    opacity: 1;
+    transform: translateX(0px) !important;
+}
+
+.arrowfAtive {
+    opacity: 1;
+    transform: translateX(0px) !important;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.maininputdiv a {
+    text-decoration: none;
+}
+
+.carousel-caption {
+    padding-bottom: 10rem !important;
+    padding-right: 25rem !important;
+    text-align: left !important;
+}
+
+.carousel-caption h4{
+    mix-blend-mode: exclusion !important;
+    font-size: 20px;
+}
+
+
+.carousel-caption a {
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.cousesInfo {
+    padding: 20px !important;
+    padding-left: 13% !important;
+    padding-right: 13% !important;
+}
+
+.coursesdiv {
+    box-shadow: 0 0 10px 10px rgba(170, 170, 170, 0.188);
+    border-radius: 10px;
+    height: 100vh;
+    padding-top: 20px;
+    position: relative;
+    margin-top: 50px;
+    background-color: var(--black);
+}
+
+.coursesdiv .bottomdiv {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 30px !important;
+}
+
+.bottomdiv a {
+    background-color: var(--smooth-blue);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: 1s ease;
+    width: 100%;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.bottomdiv a:hover {
+    background-color: var(--blue);
+}
+
+.bottomdiv p {
+    margin-bottom: 50px;
+}
+
+.cousesInfo .col-md-4 p {
+    padding: 10px !important;
+    font-size: 20px !important;
+}
+
+.cousesInfo ul {
+    text-align: left;
+    display: inline-block;
+}
+
+.coursesdivcert {
+    box-shadow: 0 0 10px 10px rgba(170, 170, 170, 0.188);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: var(--black);
+}
+
+.partnersdiv {
+    background-color: var(--black);
+    color: white;
+    padding: 10px;
+    height: 125%;
+}
+
+.imgPartnersDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgPartners {
+    flex: 1 1 10px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    padding: 1%;
+    filter: brightness(0) invert(1);
+}
+
+.activePartner {
+    background-color: white !important;
+    filter: none !important;
+}
+
+#partnerDescib{
+    font-size: 25px;
+}
+
+.questionsrow{
+    padding: 20px;
+}
+
+.questionsdiv{
+    background-color: var(--black);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.accordion{
+    background-color: var(--black);
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.accordion-item{
+    background-color: var(--black);
+    color: white;
+    border: 0;
+}
+
+.accordion-button{
+    background-color: var(--black);
+    color: white;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--black);
+    color: white;
+}
+
+.accordion-button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.rounded{
+    width: 25px;
+    height: 25px;
+}

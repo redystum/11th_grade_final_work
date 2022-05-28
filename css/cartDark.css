@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "whitney";
+    src: url("../fonts/Whitney-Book-Bas.otf");
+}
+
+* {
+    --smooth-blue: #92bae0;
+    --blue: #3e78b2;
+    --black: #2a2b2a;
+    --green: #44dc5b;
+    --orange: #e96d33;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body{
+    background-color: black !important;
+    color: white !important;
+}
+
+table{
+    color: white !important;
+}
+
+table ul, table li, td, tr{
+    color: white !important;
+}
+
+button{
+    color: white !important;
+}
+
+.cartbtn {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    font-family: 'whitney', roboto, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: var(--smooth-blue) solid 2px;
+    background-color: transparent;
+    transition: 1s ease;
+}
+
+.cartbtn:hover {
+    background-color: var(--blue);
+    border: var(--blue) solid 2px;
+
+}

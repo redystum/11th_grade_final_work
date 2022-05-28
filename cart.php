@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-
+<?php require_once './includes/connect.php'; ?>
+<?php require_once './includes/login.php'; ?>
 <head>
   <title>Title</title>
   <!-- Required meta tags -->
@@ -10,13 +11,21 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="./css/cart.css">
+  <?php
+  if($_SESSION['theme'] == 'dark'){
+    echo '<link rel="stylesheet" href="./css/cartDark.css">';
+  } else {
+    echo '<link rel="stylesheet" href="./css/cart.css">';
+  }
+?>
 </head>
 
 <body>
 
   <!-- Navbar -->
   <?php require_once './navbar.php'; ?>
+  
+  <div style="height: 100px;"></div>
 
   <?php
 
@@ -106,10 +115,10 @@
   $command = null;
   $c = null;
 
-  echo $_POST['cart'] ?? 'post <br>';
-  echo $pos ?? 'pos <br>';
-  echo $command ?? 'command <br>';
-  echo $c ?? 'c <br>';
+  // echo $_POST['cart'] ?? 'post <br>';
+  // echo $pos ?? 'pos <br>';
+  // echo $command ?? 'command <br>';
+  // echo $c ?? 'c <br>';
 
   ?>
 

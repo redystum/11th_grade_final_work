@@ -24,9 +24,16 @@
   </div>
   <p class="minifont">just for statistic</p>
 
-  <input type="password" class="login_input" placeholder="Password" name="pwd" required>
+  <input type="password" class="login_input" placeholder="Password" name="pwd" id="pwdfield" required>
   <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="showpwd();">
+  <label class="form-check-label" for="flexCheckDefault">
+    Show password
+  </label>
+</div>
+<br>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
   <label class="form-check-label" for="flexCheckDefault">
     I agree to the <a href="./terms.html" target="_blank">terms and conditions</a>
   </label>
@@ -35,3 +42,14 @@
   <button class="submit_button">Create</button>
 </form>
 <p class="registertext">Already have an account? <a href="login.php">Login here</a></p>
+
+<script>
+    function showpwd(){
+        var element = document.getElementById("pwdfield");
+        if (element.type === "password") {
+            element.type = "text";
+        } else {
+            element.type = "password";
+        }
+    }
+</script>

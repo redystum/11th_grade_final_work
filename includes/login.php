@@ -9,7 +9,7 @@ if (!isset($_SESSION['name']))
     $_SESSION['type'] = "";
     $_SESSION['mailError'] = "no";
     $_SESSION['phoneError'] = "no";
-    $_SESSION['theme'] = "white";
+    $_SESSION['theme'] = "light";
     $_SESSION['email'] = "";
     $_SESSION['userError'] = "no";
     $_SESSION['pwdError'] = "no";

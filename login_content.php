@@ -2,7 +2,7 @@
 echo '<h2>Hi ' . $_SESSION['name'] . '!</h2>';
 echo "<h4>You are <span class='sucesstext'>successfully</span> logged in.</h4>";
 ?>
-
+<br><br>
 <h4>Cart / Courses</h4>
 <p>You can access your cart and purchased courses <br> by clicking on the button below.</p>
 
@@ -89,7 +89,28 @@ echo "<h4>You are <span class='sucesstext'>successfully</span> logged in.</h4>";
     </div>
 </div>
 
+<br><br>
 
+<h4>Theme</h4>
+<p>You can change the theme of the site to light and dark below.</p>
+
+<form action="./login.php" method="post">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id="flexRadioDefault1" name="theme" value="light" <?php if($_SESSION['theme']!='dark'){echo'checked';} ?>>
+        <label class="form-check-label" for="flexRadioDefault1">
+            Light Mode
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id="flexRadioDefault2" name="theme" value="dark"  <?php if($_SESSION['theme']=='dark'){echo'checked';} ?>>
+        <label class="form-check-label" for="flexRadioDefault2">
+            Dark mode
+        </label>
+    </div>
+    <button type="submit" class="submit_button" style="margin-top: 10px !important;">Apply theme</button>
+    <p>After clicking the button above, click : <br>
+        CTRL + F5</p>
+</form>
 <?php
 
 if ($_SESSION['type'] == 'Admin') {

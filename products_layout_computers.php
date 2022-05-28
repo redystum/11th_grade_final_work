@@ -27,7 +27,27 @@
     <div class="row" style="height: 60px;"></div>
 
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
+            <?php
+
+            $p = $_GET['product'] ?? -1;
+
+            $products = $db->query("SELECT * FROM products WHERE productId = '$p'");
+
+            if (!$products) {
+                echo "Something went wrong loading the product";
+            } else {
+                if ($products->num_rows == 0) {
+                    echo "Nothing here";
+                } else {
+                    $product = $products->fetch_assoc()['productName'];
+                    echo '<img src="./img/' . $product . '.jpg"  class="img-fluid">';
+                }
+            }
+
+            ?>
+        </div>
+        <div class="col-md-6">
             <p>
                 <?php
 
@@ -43,6 +63,21 @@
                     } else {
                         $product = $products->fetch_object();
                         echo $product->productDescription;
+                    }
+                }
+
+                $products = $db->query("SELECT computers.computerName, computers.computerSpecs, computers.computerPrice FROM products INNER JOIN computers ON    computers.computerName = products.productName WHERE products.productId = '$p'");
+
+                if (!$products) {
+                    echo "Something went wrong loading the product";
+                } else {
+                    if ($products->num_rows == 0) {
+                        echo "Nothing here";
+                    } else {
+                        $product = $products->fetch_object();
+                        echo '<br><br><p>Base Price:</p>';
+                        echo '<h3>'.$product->computerPrice.'€</h3>';
+                        echo '<p>Please contact directly via phone or email if you want this product.</p>';
                     }
                 }
 
@@ -80,7 +115,7 @@
                     </span>
                     Processor
                 </th>
-                <td>'.$part['cpu'].'</td>
+                <td>' . $part['cpu'] . '</td>
             </tr>
             <tr>
                 <th scope="row">
@@ -89,7 +124,7 @@
                     </span>
                     Processor Cooling
                 </th>
-                <td>'.$part['cooler'].'</td>
+                <td>' . $part['cooler'] . '</td>
             </tr>
             <tr>
                 <th scope="row">
@@ -98,7 +133,7 @@
                     </span>
                     MotherBoard
                 </th>
-                <td>'.$part['motherboard'].'</td>
+                <td>' . $part['motherboard'] . '</td>
             </tr>
             <tr>
                 <th scope="row">
@@ -107,7 +142,7 @@
                     </span>
                     Graphics Card
                 </th>
-                <td>'.$part['gpu'].'</td>
+                <td>' . $part['gpu'] . '</td>
             </tr>
             <tr>
                 <th scope="row">
@@ -116,7 +151,7 @@
                     </span>
                     Ram
                 </th>
-                <td>'.$part['ram'].'</td>
+                <td>' . $part['ram'] . '</td>
             </tr>
             <tr>
                 <th scope="row">
@@ -125,7 +160,7 @@
                     </span>
                     Storage
                 </th>
-                <td>'.$part['ssd'].'</td>
+                <td>' . $part['ssd'] . '</td>
             </tr>
             <tr>
                 <th scope="row">
@@ -134,7 +169,7 @@
                     </span>
                     Font
                 </th>
-                <td>'.$part['psu'].'</td>
+                <td>' . $part['psu'] . '</td>
             </tr>
             <tr>
                 <th scope="row">
@@ -143,7 +178,7 @@
                     </span>
                     Case
                 </th>
-                <td>'.$part['case'].'</td>
+                <td>' . $part['case'] . '</td>
             </tr>
             <tr>
                 <th scope="row">
@@ -152,7 +187,7 @@
                     </span>
                     Operative System
                 </th>
-                <td>'.$part['os'].'</td>
+                <td>' . $part['os'] . '</td>
             </tr>
         </tbody>
     </table>';

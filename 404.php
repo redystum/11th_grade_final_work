@@ -1,4 +1,14 @@
-<link rel="stylesheet" href="./css/404.css">
+<?php
+  if($_SESSION['theme'] == 'dark'){
+    echo '<link rel="stylesheet" href="./css/404Dark.css">';
+  } else {
+    echo '<link rel="stylesheet" href="./css/404.css">';
+  }
+  http_response_code(404);
+?>
+
+
+<div style="height: 100px;"></div>
 
 <div class="container">
     <div class="row">

@@ -13,14 +13,21 @@ require_once './includes/functions.php'; ?>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="./css/styleLogin.css">
+<?php
+  if($_SESSION['theme'] == 'dark'){
+    echo '<link rel="stylesheet" href="./css/styleLoginDark.css">';
+  } else {
+    echo '<link rel="stylesheet" href="./css/styleLogin.css">';
+  }
+
+?>
 
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <?php require_once './navbar-fixed.php'; ?>
+  <?php require_once './navbar.php'; ?>
 
   <div class="container-fluid">
     <div class="row">
@@ -41,7 +48,6 @@ require_once './includes/functions.php'; ?>
               echo "<h4>You are <span class='sucesstext'>successfully</span> logged in.</h4>";
               echo '<br><br><br>';
               echo "You can go to the home page by clicking on the button below";
-              echo '<a href="index.php"><button type="submit" class="submit_button">Home</button></a>';
             } else {
               require "./register_form.php";
             }

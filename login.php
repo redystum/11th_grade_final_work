@@ -13,14 +13,22 @@ require_once './includes/functions.php'; ?>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="./css/styleLogin.css">
+  <?php
+  
+  if($_SESSION['theme'] == 'dark'){
+    echo '<link rel="stylesheet" href="./css/styleLoginDark.css">';
+  } else {
+    echo '<link rel="stylesheet" href="./css/styleLogin.css">';
+  }
+
+  ?>
 
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <?php require_once './navbar-fixed.php'; ?>
+  <?php require_once './navbar.php'; ?>
 
 
   <div class="container-fluid">
@@ -33,6 +41,19 @@ require_once './includes/functions.php'; ?>
           $usr = $_POST['email'] ?? null;
           $pwd = $_POST['pwd'] ?? null;
 
+          $theme = $_POST['theme'] ?? null;
+
+          if ($theme) {
+            if ($theme == "dark") {
+              $_SESSION['theme'] = "dark";
+            } else {
+              $_SESSION['theme'] = "light";
+            }
+          }
+
+          $_SESSION['pwdError'] = "no";
+          $_SESSION['userError'] = "no";
+
           if (is_null($usr) || is_null($pwd)) {
             if ($_SESSION['name'] != '') {
               require_once './login_content.php';
@@ -40,16 +61,16 @@ require_once './includes/functions.php'; ?>
               require "./login_form.php";
             }
           } else {
-            $q = "SELECT userName, userPwd, userType FROM users WHERE userMail = '$usr' LIMIT 1";
+            $q = "SELECT userName, userPwd, userType FROM users WHERE userMail = '$usr' or userPhone = '$usr' LIMIT 1";
             $result = $db->query($q);
             $reg = $result->fetch_object();
             if (!$result) {
               echo "<h2>Hi " . $usr . " !</h2>";
-              echo '<h4>Error connecting to database</h4>';
+              echo '<h4>Error connecting to database, try again...</h4>';
             } else {
               if ($result->num_rows == 0) {
-                echo "<h2>Hi " . $usr . " !</h2>";
-                echo '<h4>User not found</h4>';
+                $_SESSION['userError'] = "yes";
+                require_once './login_form.php';
               } else {
                 if (test_hash($pwd, $reg->userPwd)) {
                   echo "<h2>Hi " . $reg->userName . " !</h2>";
@@ -57,13 +78,16 @@ require_once './includes/functions.php'; ?>
                   $_SESSION['name'] = $reg->userName;
                   $_SESSION['type'] = $reg->userType;
                   $_SESSION['email'] = $usr;
+                  $_SESSION['pwdError'] = "no";
+                  $_SESSION['userError'] = "no";
                 } else {
-                  echo "<h4>Login failed</h4>";
+                  $_SESSION['pwdError'] = "yes";
+                  require_once './login_form.php';
                 }
               }
             }
           }
-
+          $_POST = array();
           backtomain();
           ?>
 
