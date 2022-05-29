@@ -15,3 +15,28 @@ The entire theme is integrated into the productivity area, graphic design and 3D
 - JavaScript
 - PHP
 - MySQL
+
+# The story behind
+This site belongs to an online course sales company called "Artistic Design", which aims to become the world's largest distributor of highly qualified courses with a complete production in its studios.
+To begin with, this company already sells courses in:
+### Office:
+- Word
+- Excel
+- Powerpoint
+### Adobe:
+-  Illustrator
+-  Photoshop
+-  Premiere Pro
+-  After Effects
+### Autodesk:
+-  Autocad
+- 3dsMax
+- Fusion360
+- Maya
+- Mudbox
+
+(this site is for demonstration purposes only, do not sell any products)
+
+
+With everything, the best thing is to visit the online site: \
+http://redystum.tk/escola/cpw/Site_Final/
