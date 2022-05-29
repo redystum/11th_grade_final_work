@@ -49,7 +49,7 @@
             <p>
                 We are a qualified company that specializes in selling courses.
                 Founded on 01/05/2022, we are already the largest and best qualified distributor of online courses, for our unique offers and high quality classes at a fair price.
-                We were founded by, Francisco Neto and Reuben Alves, because it was seen a great lack of qualified courses in the Office, Adobe and Autodesk area.
+                We were founded by, Francisco Neto and Rúben Alves, because it was seen a great lack of qualified courses in the Office, Adobe and Autodesk area.
             </p>
         </div>
 
