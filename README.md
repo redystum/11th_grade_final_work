@@ -18,12 +18,18 @@ The entire theme is integrated into the productivity area, graphic design and 3D
 - MySQL
 
 
+.
+.
+.
+.
+.
+.
+.
+
+
 # appointments
 ### Color Palette:
 https://coolors.co/e96d33-2a2b2a-3e78b2-92bae0-44dc5b
-
-### Copyright
-https://br.freepik.com/fotos-gratis/jovem-empresaria-asiatica-usando-telefone-inteligente-com-tela-em-branco-enquanto-trabalha-em-casa-na-sala-de-estar_17897330.htm#query=office&position=33&from_view=search
 
 
 ### images from pexels
