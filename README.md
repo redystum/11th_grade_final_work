@@ -25,12 +25,9 @@ https://coolors.co/e96d33-2a2b2a-3e78b2-92bae0-44dc5b
 ### Copyright
 https://br.freepik.com/fotos-gratis/jovem-empresaria-asiatica-usando-telefone-inteligente-com-tela-em-branco-enquanto-trabalha-em-casa-na-sala-de-estar_17897330.htm#query=office&position=33&from_view=search
 
-### cenas pa perguntar ao stor
-1- quando se atualiza a pagina no cart ele renvia o form sla pq mesmo eleminando as variaveis
 
-
-### fotos do pexels
-#### homens
+### images from pexels
+#### boys
 https://www.pexels.com/photo/portrait-of-a-handsome-man-in-a-white-crew-neck-shirt-wearing-eyeglasses-7152084/
 https://www.pexels.com/photo/man-smiling-behind-wall-220453/
 https://www.pexels.com/photo/photo-of-man-wearing-eyeglasses-6801642/
@@ -44,7 +41,7 @@ https://www.pexels.com/photo/man-in-orange-crew-neck-shirt-wearing-black-sunglas
 https://www.pexels.com/photo/art-aspiring-chatting-imagin-1516682/
 https://www.pexels.com/photo/photo-of-man-leaning-on-fence-3105572/
 
-#### mulheres
+#### womens
 https://www.pexels.com/photo/woman-wearing-a-gold-framed-eyeglasses-9178841/
 https://www.pexels.com/photo/portrait-of-a-beautiful-woman-in-a-denim-jacket-wearing-eyeglasses-8288678/
 https://www.pexels.com/photo/woman-with-red-hair-wearing-a-white-shirt-and-black-pants-7638626/
@@ -58,4 +55,6 @@ https://www.pexels.com/photo/beautiful-woman-with-messy-hair-smiling-at-the-came
 https://www.pexels.com/photo/portrait-of-a-beautiful-woman-with-red-hair-looking-at-the-camera-5443335/
 https://www.pexels.com/photo/portrait-of-a-brunette-with-curly-hair-wearing-black-eyeglasses-4320084/
 
-## Nenhuma imagem otimizada! Passar com o handbrake em tudo
+
+### cenas pa perguntar ao stor
+1- quando se atualiza a pagina no cart ele renvia o form sla pq mesmo eleminando as variaveis
