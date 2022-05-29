@@ -17,7 +17,7 @@ echo "<h4>You are <span class='sucesstext'>successfully</span> logged in.</h4>";
         <?php
         function no_image_login()
         {
-            echo '<img src="./img/unknown.png" alt="" class="img-fluid imagepreview">';
+            echo '<img src="./img/others/unknown.svg" alt="" class="img-fluid imagepreview">';
         }
 
         $q = "SELECT userPicture, userId FROM users WHERE userName = '" . $_SESSION["name"] . "' LIMIT 1";

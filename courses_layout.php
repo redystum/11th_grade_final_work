@@ -21,7 +21,7 @@
       ?>
 
 
-      <img src="./img/logo_progeto_final_logo.png" alt="" width="50px" class="float-end">
+      <img src="./img/Logos/FinalLogo.svg" alt="" width="50px" class="float-end invert">
       <br>
       <h1>
         <?php
@@ -33,11 +33,11 @@
       <br>
 
       <p class="rating">5 stars rating</p>
-      <img src="./img/star.svg" width="20px">
-      <img src="./img/star.svg" width="20px">
-      <img src="./img/star.svg" width="20px">
-      <img src="./img/star.svg" width="20px">
-      <img src="./img/star.svg" width="20px">
+      <img src="./img/others/star.svg" width="20px">
+      <img src="./img/others/star.svg" width="20px">
+      <img src="./img/others/star.svg" width="20px">
+      <img src="./img/others/star.svg" width="20px">
+      <img src="./img/others/star.svg" width="20px">
       <br>
       <br>
       <p>
@@ -47,7 +47,7 @@
         $reslt = $result->fetch_assoc();
         echo $reslt['courseName'];
 
-        $img = './img/' . $reslt['courseCategory'] . '_course_' . $reslt['courseCategoryId'] . '.png';
+        $img = './img/productsImages/' . $reslt['courseCategory'] . '_course_' . $reslt['courseCategoryId'] . '.png';
 
         echo 'course from 0 to advanced, with the purpose of teaching the software completely.</p>
       <br>

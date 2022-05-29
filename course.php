@@ -33,7 +33,7 @@
   }
 
 ?>
-<link rel="shortcut icon" href="./img/Ruben_Alves_logo_progeto_final_logo.ico" type="image/x-icon">
+<link rel="shortcut icon" href="./img/Logos/FinalLogo.ico" type="image/x-icon">
 
 </head>
 
@@ -86,7 +86,7 @@
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
       <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
-          <img src="./img/logo_progeto_final_logo.png" class="rounded me-2" alt="">
+          <img src="./img/logos/FinalLogo.svg" class="rounded me-2" alt="">
           <strong class="me-auto">Artistic Design</strong>
           <small></small>
           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>

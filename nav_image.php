@@ -3,11 +3,11 @@
 
 <?php
     if (empty($_SESSION['name'])){
-        echo '<a href="login.php"><img src="./img/login.png" alt="" class="img-fluid rounded" style="float: right;" width="25px"></a>';
+        echo '<a href="login.php"><img src="./img/others/login.svg" alt="" class="img-fluid rounded" style="float: right;" width="25px"></a>';
     } else {
 
         function no_image(){
-        echo '<a href="login.php"><img src="./img/unknown.png" alt="" class="img-fluid rounded" style="float: right;" width="25px"></a>';
+        echo '<a href="login.php"><img src="./img/others/unknown.svg" alt="" class="img-fluid rounded" style="float: right;" width="25px"></a>';
         }
 
         $q = "SELECT userPicture, userId FROM users WHERE userName = '" . $_SESSION["name"] . "' LIMIT 1";

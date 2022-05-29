@@ -1,3 +1,5 @@
+<div class="row" style="height: 100px;"></div>
+
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center">
@@ -30,13 +32,13 @@
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/'. $atualCourse->productName . '_course_1.png" class="d-block w-100" alt="">
+                        <img src="./img/productsImages/'. $atualCourse->productName . '_course_1.png" class="d-block w-100" alt="">
                     </div>
                     <div class="carousel-item">
-                    <img src="./img/'. $atualCourse->productName . '_course_2.png" class="d-block w-100" alt="">
+                    <img src="./img/productsImages/'. $atualCourse->productName . '_course_2.png" class="d-block w-100" alt="">
                     </div>
                     <div class="carousel-item">
-                    <img src="./img/'. $atualCourse->productName . '_course_3.png" class="d-block w-100" alt="">
+                    <img src="./img/productsImages/'. $atualCourse->productName . '_course_3.png" class="d-block w-100" alt="">
 
                     </div>
                 </div>
@@ -107,7 +109,7 @@
         <!-- carrousel -->
         <div class="row">
         <div class="col-md-6">
-        <img src="./img/' . $atualPC->productName . '.jpg" class="img-fluid">
+        <img src="./img/productsImages/' . $atualPC->productName . '.png" class="img-fluid">
         </div>';
 
         echo '

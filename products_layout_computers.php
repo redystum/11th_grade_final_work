@@ -1,3 +1,5 @@
+<div class="row" style="height: 100px;"></div>
+
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center">
@@ -41,7 +43,7 @@
                     echo "Nothing here";
                 } else {
                     $product = $products->fetch_assoc()['productName'];
-                    echo '<img src="./img/' . $product . '.jpg"  class="img-fluid">';
+                    echo '<img src="./img/productsImages/' . $product . '.png"  class="img-fluid">';
                 }
             }
 

@@ -19,13 +19,16 @@
     echo '<link rel="stylesheet" href="./css/certification.css">';
   }
 ?>
-<link rel="shortcut icon" href="./img/Ruben_Alves_logo_progeto_final_logo.ico" type="image/x-icon">
+<link rel="shortcut icon" href="./img/Logos/FinalLogo.ico" type="image/x-icon">
 
 </head>
 
 <body>
 
     <?php require_once './navbar.php' ?>
+
+<div class="row" style="height: 100px;"></div>
+
 
     <div class="container">
         <div class="row">
@@ -96,7 +99,7 @@
             <div class="col-md-3"></div>
             <div class="col-md-6 text-center">
                 <h3>Certificate Example</h3>
-                <img src="./img/certification.png" alt="" class="img-fluid">
+                <img src="./img/others/certification.png" alt="" class="img-fluid">
             </div>
             <div class="col-md-3"></div>
         </div>

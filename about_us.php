@@ -20,7 +20,7 @@
   }
 ?>
 
-<link rel="shortcut icon" href="./img/Ruben_Alves_logo_progeto_final_logo.ico" type="image/x-icon">
+<link rel="shortcut icon" href="./img/Logos/FinalLogo.ico" type="image/x-icon">
 
 </head>
 
@@ -28,12 +28,19 @@
 
     <?php require_once './navbar.php'; ?>
 
+    <div style="height: 100px;"></div>
+
     <div class="container">
         <div class="row text-center">
             <h1>About Us</h1>
         </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <img src="./img/Logos/FinalLogo_Letters.svg" alt="" class="img-fluid" width="300px">
+            </div>
+        </div>
 
-        <div style="height: 100px;"></div>
+        <div style="height: 60px;"></div>
 
         <div class="row">
             <h2>Who we are</h2>

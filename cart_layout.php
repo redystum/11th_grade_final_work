@@ -120,9 +120,8 @@
                             }
                             echo '</tr>';
                             echo '<tr>';
-                            echo '<td scope="row"><img src="./img/logo_progeto_final_logo.png" alt="course image" class="img-fluid" width="50px"></td>';
-                            echo '<td>Buy All</td>';
-                            echo '<td></td>';
+                            echo '<td scope="row"><img src="./img/Logos/FinalLogo.svg" alt="" class="img-fluid logo" width="50px"></td>';
+                            echo '<td colspan="2">Buy All</td>';
                             echo '<td>' . $pricetotal . '€</td>';
                             echo '<td>
                             <form action="./cart.php" method="post">

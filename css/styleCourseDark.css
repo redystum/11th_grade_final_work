@@ -122,5 +122,15 @@ tbody td {
 }
 
 .toast-header{
-    background-color: var(--smooth-blue);
+    background-color: var(--blue);
+    color: white;
+}
+
+.toast-body{
+    background-color: var(--black);
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
 }

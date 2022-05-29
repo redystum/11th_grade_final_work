@@ -27,7 +27,7 @@
 
   <script src="./js/animations.js"></script>
   <script src="./js/partneres.js"></script>
-  <link rel="shortcut icon" href="./img/Ruben_Alves_logo_progeto_final_logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/Logos/FinalLogo.ico" type="image/x-icon">
 
 </head>
 <body>
@@ -49,7 +49,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item">
-          <img src="./img/adobe.png" class="d-block w-100" alt="">
+          <img src="./img/productsImages/adobe.png" class="d-block w-100" alt="">
           <div class="carousel-caption d-none d-md-block">
             <h4><b class="fs-3">Easy</b> job <br> with <b class="fs-3">high</b> <br> Adobe knowledge</h4>
             <br>
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="carousel-item active">
-          <img src="./img/autodesk.png" class="d-block w-100" alt="">
+          <img src="./img/productsImages/autodesk.png" class="d-block w-100" alt="">
           <div class="carousel-caption d-none d-md-block">
             <h4><b class="fs-3">Create</b> <br> <b class="fs-3">high</b> quality 3D <br> artwork</h4>
             <br>
@@ -65,7 +65,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./img/office.png" class="d-block w-100" alt="">
+          <img src="./img/productsImages/office.png" class="d-block w-100" alt="">
           <div class="carousel-caption d-none d-md-block">
             <h4>Be the <br> <b class="fs-3">best</b> at <br> Office software</h4>
             <br>
@@ -94,8 +94,8 @@
         <br>
         <a href="#">
           <span class="Stext">Search</span>
-          <img src="./img/arrow_back.png" alt="" width="20%" class="arrowb">
-          <img src="./img/arrow_front.png" alt="" width="10%" class="arrowf">
+          <img src="./img/others/arrow_back.svg" alt="" width="20%" class="arrowb">
+          <img src="./img/others/arrow_front.svg" alt="" width="10%" class="arrowf">
         </a>
       </div>
     </div>
@@ -212,16 +212,16 @@
           <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8 imgPartnersDiv">
-              <div class="imgPartners activePartner" id="imgMicrosoft" onmouseenter="MicrosoftText();"><img src="./img/MicrosoftLogo.png" alt="" class="img-fluid" width="150px"></div>
-              <div class="imgPartners" id="imgAdobe" onmouseenter="AdobeText();"><img src="./img/AdobeLogo.png" alt="" class="img-fluid" width="150px"></div>
-              <div class="imgPartners" id="imgAutodesk" onmouseenter="AutodeskText();"><img src="./img/AutodeskLogo.png" alt="" class="img-fluid" width="150px"></div>
-              <div class="imgPartners" id="imgCSM" onmouseenter="CSMText();"><img src="./img/CSMLogo.png" alt="" class="img-fluid" width="150px"></div>
+              <div class="imgPartners activePartner" id="imgMicrosoft" onmouseenter="MicrosoftText();"><img src="./img/Logos/MicrosoftLogo.png" alt="" class="img-fluid" width="150px"></div>
+              <div class="imgPartners" id="imgAdobe" onmouseenter="AdobeText();"><img src="./img/Logos/AdobeLogo.png" alt="" class="img-fluid" width="150px"></div>
+              <div class="imgPartners" id="imgAutodesk" onmouseenter="AutodeskText();"><img src="./img/Logos/AutodeskLogo.png" alt="" class="img-fluid" width="150px"></div>
+              <div class="imgPartners" id="imgCSM" onmouseenter="CSMText();"><img src="./img/Logos/CSMLogo.png" alt="" class="img-fluid" width="150px"></div>
             </div>
             <div class="col-md-2"></div>
           </div>
           <div class="row">
             <div class="col-md-6">
-              <img src="./img/Microsoft_image.png" alt="" class="img-fluid imgPartner">
+              <img src="./img/others/Microsoft_image.png" alt="" class="img-fluid imgPartner">
             </div>
             <div class="col-md-6">
               <h2 id="thxPartner">Thanks Microsoft,</h2>

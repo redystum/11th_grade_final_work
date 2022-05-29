@@ -8,7 +8,7 @@
 <nav class="navbar fixed-top navbar-expand-lg <?php if($_SESSION['theme']=='dark'){echo'navbar-dark bg-dark';}else{echo'navbar-light bg-light';} ?>">
     <div class="container-fluid">
       <span class="navbar-brand">
-        <img src="./img/logo_progeto_final_logo.png" alt="" width="30" class="d-inline-block align-text-top" <?php if($_SESSION['theme']=='dark'){echo'style="filter: invert(1) !important;"';}?>>
+        <img src="./img/Logos/FinalLogo.svg" alt="" width="30" class="d-inline-block align-text-top" <?php if($_SESSION['theme']=='dark'){echo'style="filter: invert(1) !important;"';}?>>
         Artistic Design
       </span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

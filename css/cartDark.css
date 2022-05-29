@@ -54,3 +54,7 @@ button{
     border: var(--blue) solid 2px;
 
 }
+
+.logo{
+    filter: invert(1);
+}

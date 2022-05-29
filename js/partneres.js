@@ -3,7 +3,7 @@ function MicrosoftText(){
 
     document.getElementById("partnerDescib").innerHTML = text;
     document.getElementById("thxPartner").innerHTML = "Thanks Microsoft,";
-    document.getElementsByClassName("imgPartner")[0].src = "./img/Microsoft_image.png";
+    document.getElementsByClassName("imgPartner")[0].src = "./img/others/Microsoft_image.png";
     document.getElementById("imgMicrosoft").classList.add("activePartner")
     document.getElementById("imgAutodesk").classList.remove("activePartner")
     document.getElementById("imgAdobe").classList.remove("activePartner")
@@ -15,7 +15,7 @@ function AdobeText(){
 
     document.getElementById("partnerDescib").innerHTML = text;
     document.getElementById("thxPartner").innerHTML = "Thanks Adobe,";
-    document.getElementsByClassName("imgPartner")[0].src = "./img/Adobe_image.png";
+    document.getElementsByClassName("imgPartner")[0].src = "./img/others/Adobe_image.png";
     document.getElementById("imgAdobe").classList.add("activePartner")
     document.getElementById("imgAutodesk").classList.remove("activePartner")
     document.getElementById("imgCSM").classList.remove("activePartner")
@@ -27,7 +27,7 @@ function AutodeskText(){
 
     document.getElementById("partnerDescib").innerHTML = text;
     document.getElementById("thxPartner").innerHTML = "Thanks Autodesk,";
-    document.getElementsByClassName("imgPartner")[0].src = "./img/Autodesk_image.png";
+    document.getElementsByClassName("imgPartner")[0].src = "./img/others/Autodesk_image.png";
     document.getElementById("imgAutodesk").classList.add("activePartner")
     document.getElementById("imgCSM").classList.remove("activePartner")
     document.getElementById("imgAdobe").classList.remove("activePartner")
@@ -39,7 +39,7 @@ function CSMText(){
 
     document.getElementById("thxPartner").innerHTML = "Thanks CSM,";
     document.getElementById("partnerDescib").innerHTML = text;
-    document.getElementsByClassName("imgPartner")[0].src = "./img/CSM_image.png";
+    document.getElementsByClassName("imgPartner")[0].src = "./img/others/CSM_image.png";
     document.getElementById("imgCSM").classList.add("activePartner")
     document.getElementById("imgAutodesk").classList.remove("activePartner")
     document.getElementById("imgAdobe").classList.remove("activePartner")

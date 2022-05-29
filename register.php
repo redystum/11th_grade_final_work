@@ -21,7 +21,7 @@ require_once './includes/functions.php'; ?>
   }
 
 ?>
-<link rel="shortcut icon" href="./img/Ruben_Alves_logo_progeto_final_logo.ico" type="image/x-icon">
+<link rel="shortcut icon" href="./img/Logos/FinalLogo.ico" type="image/x-icon">
 
 </head>
 
@@ -101,7 +101,7 @@ require_once './includes/functions.php'; ?>
         </div>
       </div>
       <div class="col-md-6 img_div">
-        <img src="./img/log.png" alt="" class="img-fluid" id="loginimg">
+        <img src="./img/others/log.png" alt="" class="img-fluid" id="loginimg">
       </div>
     </div>
   </div>
