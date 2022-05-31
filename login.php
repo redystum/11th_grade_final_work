@@ -62,7 +62,7 @@ require_once './includes/functions.php'; ?>
               require "./login_form.php";
             }
           } else {
-            $q = "SELECT userName, userPwd, userType FROM users WHERE userMail = '$usr' or userPhone = '$usr' LIMIT 1";
+            $q = "SELECT userName, userPwd, userType, userMail FROM users WHERE userMail like '$usr' or userPhone like '$usr' LIMIT 1";
             $result = $db->query($q);
             $reg = $result->fetch_object();
             if (!$result) {
@@ -78,7 +78,7 @@ require_once './includes/functions.php'; ?>
                   echo "<h4>You are <span class='sucesstext'>successfully</span> logged in.</h4>";
                   $_SESSION['name'] = $reg->userName;
                   $_SESSION['type'] = $reg->userType;
-                  $_SESSION['email'] = $usr;
+                  $_SESSION['email'] = $reg->userMail;
                   $_SESSION['pwdError'] = "no";
                   $_SESSION['userError'] = "no";
                 } else {

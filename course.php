@@ -39,6 +39,8 @@
 
 <body>
 
+<div class="row" style="height: 100px;"></div>
+
   <?php require_once './navbar.php'; ?>
 
   <button type="button" class="dontexist" onclick="showdialog();" id="showdialogbtn"></button>
@@ -60,6 +62,7 @@
         } else {
           $result = $db->query("SELECT * FROM users WHERE userMail = '" . $_SESSION['email'] . "'");
           if ($result) {
+            if ($result->num_rows != 0){
             $oldcart = $result->fetch_assoc()['userCart'];
             $cart =  json_decode($oldcart, true);
             array_push($cart['cart'], $course);
@@ -71,6 +74,7 @@
             }, 1000);
       </script>';
           }
+        }
         }
       }
 
@@ -86,12 +90,12 @@
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
       <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
-          <img src="./img/logos/FinalLogo.svg" class="rounded me-2" alt="">
+          <img src="./img/Logos/FinalLogo.svg" class="rounded me-2" alt="">
           <strong class="me-auto">Artistic Design</strong>
           <small></small>
           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
-        <div class="toast-body">
+        <div class="toast-body <?php if($_SESSION['theme'] == 'dark'){echo'text-white';} ?>">
           Suceffully added to cart!
         </div>
       </div>
