@@ -38,5 +38,5 @@ To begin with, this company already sells courses in:
 (this site is for demonstration purposes only, do not sell any products)
 
 
-With everything, the best thing is to visit the online site: \
-http://redystum.tk/escola/cpw/Site_Final/
+# But you know what's really best, is to visit the site:
+[Click Here to Go](http://redystum.tk/escola/cpw/Site_Final/)
