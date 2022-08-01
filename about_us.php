@@ -126,9 +126,11 @@
 
             ?>
 
-<div style="height: 100px;"></div>
 
-        </div>
+
+</div>
+<p class="cpr">Images from https://www.freepik.com/</p>
+        <div style="height: 100px;"></div>
 
         <?php require_once './footer.php'; ?>
     </div>
