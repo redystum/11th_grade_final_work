@@ -39,4 +39,4 @@ To begin with, this company already sells courses in:
 
 
 # But you know what's really best, is to visit the site:
-[Click Here to Go](http://redystum.tk/escola/cpw/Site_Final/)
+[Click Here to Go](http://redystum.me/escola/cpw/Site_Final/)
